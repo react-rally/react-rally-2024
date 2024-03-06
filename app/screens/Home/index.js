@@ -38,7 +38,7 @@ export default () => {
         </section>
       )}
 
-      {false && (
+      {true && (
         <section>
           <h2>Upcoming Dates</h2>
           <UpcomingDate
