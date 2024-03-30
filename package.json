@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --inline --content-base ./",
     "build": "npm run clean && npm run imagemin && NODE_ENV=production webpack",
     "imagemin": "./scripts/imagemin",
-    "clean": "rm -rf ./assets/dist && rm -f bundle.js && rm -f *.png"
+    "clean": "rm -rf ./assets/dist && rm -f bundle.js && rm -f *.png",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -33,8 +34,12 @@
     "imagemin": "4.0.0",
     "imagemin-pngquant": "4.2.2",
     "json-loader": "0.5.4",
+    "prettier": "3.2.5",
     "style-loader": "0.13.0",
     "webpack": "1.12.14",
     "webpack-dev-server": "1.14.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

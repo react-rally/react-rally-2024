@@ -1,6 +1,6 @@
-import React from 'react';
-import moment from 'moment';
-import Button from 'components/Button';
+import React from "react";
+import moment from "moment";
+import Button from "components/Button";
 import { useAppContext } from "App";
 
 // TODO new map images
@@ -17,7 +17,11 @@ export default () => {
         </h2>
         <div className="Venue__Details">
           <div className="Venue__Details__Mapbox">
-            <a href={constants.Links.VENUE_DIRECTIONS} aria-label="Map directions to venue." target="_blank">
+            <a
+              href={constants.Links.VENUE_DIRECTIONS}
+              aria-label="Map directions to venue."
+              target="_blank"
+            >
               <img src="assets/dist/img/Marriott_Map.png" alt="" width="400" />
             </a>
             <div className="Venue__Details__Mapbox__Address">
@@ -26,7 +30,8 @@ export default () => {
             </div>
             <Button
               href={constants.Links.HOTEL_RESERVATION}
-              className="primary">
+              className="primary"
+            >
               Book a Room
             </Button>
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -35,15 +40,14 @@ export default () => {
             </Button>
           </div>
           <div className="Venue__Details__Description">
+            <p>{constants.Venue.Hotel.DESCRIPTION}</p>
             <p>
-              {constants.Venue.Hotel.DESCRIPTION}
-            </p>
-            <p>
-              We have arranged a group discount with {constants.Venue.Hotel.NAME} for
-              attendees of {constants.Meta.EVENT_NAME}. Rooms are available for $
+              We have arranged a group discount with{" "}
+              {constants.Venue.Hotel.NAME} for attendees of{" "}
+              {constants.Meta.EVENT_NAME}. Rooms are available for $
               {constants.Prices.HOTEL_RATE} per night. This discounted rate is
-              only available until{' '}
-              {moment.utc(constants.Dates.HOTEL_DISCOUNT).format('MMMM Do')} and
+              only available until{" "}
+              {moment.utc(constants.Dates.HOTEL_DISCOUNT).format("MMMM Do")} and
               there are a limited number of rooms available, so book your room
               early.
             </p>

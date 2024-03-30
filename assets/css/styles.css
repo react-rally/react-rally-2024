@@ -33,7 +33,7 @@
 body {
   background-color: var(--color-white);
   color: var(--color-primary);
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: var(--size-font-default);
   margin: 0;
   min-width: 360px;
@@ -65,7 +65,7 @@ h6 {
   border-left: 4px solid var(--color-tealDark);
   margin-left: -20px;
   padding-left: 20px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   margin: 0;
 }
 
@@ -78,10 +78,10 @@ section h1 {
 /* forms */
 .Button,
 button,
-input[type='text'],
-input[type='email'] {
+input[type="text"],
+input[type="email"] {
   border-radius: 5px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: var(--size-font-medium);
   padding: 5px 10px;
 }
@@ -130,8 +130,8 @@ button[disabled] {
   color: var(--color-grayDarkest);
 }
 
-input[type='text'],
-input[type='email'] {
+input[type="text"],
+input[type="email"] {
   border: 1px solid var(--color-white);
   line-height: 1.6;
   width: 260px;
@@ -463,13 +463,13 @@ input[type='email'] {
 }
 .Schedule__Session--speaker .Schedule__Session__Description,
 .Schedule__Session--description .Schedule__Session__Description {
-  // margin-left: 225px;
+  /* margin-left: 225px; */
 }
 .Schedule__Session--description .Schedule__Session__Description {
-  // margin-top: -30px;
+  /* margin-top: -30px; */
 }
 .Schedule__Session--speaker .Schedule__Session__Description {
-  // margin-top: -60px;
+  /* margin-top: -60px; */
 }
 .Schedule__Session__Description em {
   color: var(--color-tealLight);
@@ -616,7 +616,7 @@ input[type='email'] {
 }
 
 .Header__Nav__Button__Hamburger::before {
-  content: ' ';
+  content: " ";
   display: block;
   background-color: var(--color-red);
   height: 4px;
@@ -627,7 +627,7 @@ input[type='email'] {
 }
 
 .Header__Nav__Button__Hamburger::after {
-  content: ' ';
+  content: " ";
   display: block;
   background-color: var(--color-red);
   height: 4px;
@@ -793,7 +793,7 @@ section.Footer__Tickets h2 {
 }
 .Countdown__Timer {
   color: var(--color-white);
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 /* -- Workshop -- */

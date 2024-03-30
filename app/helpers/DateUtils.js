@@ -1,30 +1,30 @@
-const DateUtils = {}
+const DateUtils = {};
 
-DateUtils.SECONDS = 1000
-DateUtils.MINUTES = DateUtils.SECONDS * 60
-DateUtils.HOURS = DateUtils.MINUTES * 60
-DateUtils.DAYS = DateUtils.HOURS * 24
+DateUtils.SECONDS = 1000;
+DateUtils.MINUTES = DateUtils.SECONDS * 60;
+DateUtils.HOURS = DateUtils.MINUTES * 60;
+DateUtils.DAYS = DateUtils.HOURS * 24;
 
 DateUtils.duration = (timeInMillis) => {
   const intervals = {
-    'd': DateUtils.DAYS,
-    'h': DateUtils.HOURS,
-    'm': DateUtils.MINUTES,
-    's': DateUtils.SECONDS,
-  }
-  let sb = ''
+    d: DateUtils.DAYS,
+    h: DateUtils.HOURS,
+    m: DateUtils.MINUTES,
+    s: DateUtils.SECONDS,
+  };
+  let sb = "";
 
   Object.keys(intervals).forEach((k) => {
-    let v = intervals[k]
-    let unit = Math.floor(timeInMillis / v)
-    timeInMillis %= v
+    let v = intervals[k];
+    let unit = Math.floor(timeInMillis / v);
+    timeInMillis %= v;
 
-    if (sb.length === 0 && unit === 0) return
-    if (sb.length > 0) sb += ':'
-    if (String(unit).length === 1) unit = '0' + unit
-    sb += unit + k
-  })
-  return sb
-}
+    if (sb.length === 0 && unit === 0) return;
+    if (sb.length > 0) sb += ":";
+    if (String(unit).length === 1) unit = "0" + unit;
+    sb += unit + k;
+  });
+  return sb;
+};
 
-export default DateUtils
+export default DateUtils;

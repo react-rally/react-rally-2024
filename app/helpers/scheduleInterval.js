@@ -14,13 +14,16 @@ export default function scheduleInterval(fn, time) {
   let timeout;
   let interval;
 
-  timeout = setTimeout(() => {
-    timeout = null;
+  timeout = setTimeout(
+    () => {
+      timeout = null;
 
-    fn();
+      fn();
 
-    interval = setInterval(fn, time);
-  }, time - (Date.now() % time));
+      interval = setInterval(fn, time);
+    },
+    time - (Date.now() % time),
+  );
 
   return () => {
     timeout && clearTimeout(timeout);

@@ -58,14 +58,19 @@ export default () => {
             <h4>Contact</h4>
             <div>
               Get in touch with us at{" "}
-              <a href={`mailto:${constants.Links.EMAIL_ORGANIZERS}`}>{constants.Links.EMAIL_ORGANIZERS}</a>
+              <a href={`mailto:${constants.Links.EMAIL_ORGANIZERS}`}>
+                {constants.Links.EMAIL_ORGANIZERS}
+              </a>
             </div>
           </section>
           <section>
             <Icon href="https://twitter.com/ReactRally" type="twitter" />
             <Icon href="https://github.com/react-rally" type="github" />
             <Icon href="https://instagram.com/reactrally" type="instagram" />
-            <Icon href="https://www.youtube.com/channel/UCXBhQ05nu3L1abBUGeQ0ahw" type="youtube" />
+            <Icon
+              href="https://www.youtube.com/channel/UCXBhQ05nu3L1abBUGeQ0ahw"
+              type="youtube"
+            />
           </section>
           <section>
             &copy; {new Date().getFullYear()}{" "}

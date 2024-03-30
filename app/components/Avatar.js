@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default ({ size = 200, url, style }) => (
   <img
@@ -9,9 +9,9 @@ export default ({ size = 200, url, style }) => (
       {
         width: size,
         height: size,
-        borderRadius: size / 2
+        borderRadius: size / 2,
       },
-      style
+      style,
     )}
   />
 );

@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router';
-import moment from 'moment';
-import shuffle from 'helpers/shuffle';
-import About from 'components/About';
-import Person from 'components/Person';
+import React from "react";
+import { Link } from "react-router";
+import moment from "moment";
+import shuffle from "helpers/shuffle";
+import About from "components/About";
+import Person from "components/Person";
 import { useAppContext } from "App";
 
-import UpcomingDate from './UpcomingDate'
-import TicketCard from './TicketCard'
+import UpcomingDate from "./UpcomingDate";
+import TicketCard from "./TicketCard";
 
 export default () => {
   const { constants, speakers, tickets } = useAppContext();
@@ -27,8 +27,8 @@ export default () => {
           <h2>Featured Speakers</h2>
           <div className="align-center">
             {shuffle(Object.keys(speakers))
-              .filter(key => speakers[key].featured)
-              .map(key => {
+              .filter((key) => speakers[key].featured)
+              .map((key) => {
                 return <Person {...speakers[key]} key={key} />;
               })}
           </div>
@@ -54,24 +54,29 @@ export default () => {
             description="Early Bird Tickets (round one) go on sale."
           />
           <UpcomingDate
-            timestamp={moment.utc(constants.Dates.TICKET_RELEASE).add(7, 'days')}
+            timestamp={moment
+              .utc(constants.Dates.TICKET_RELEASE)
+              .add(7, "days")}
             description="Early Bird Tickets (round two) go on sale."
           />
           <UpcomingDate
-            timestamp={moment.utc(constants.Dates.TICKET_RELEASE).add(14, 'days')}
+            timestamp={moment
+              .utc(constants.Dates.TICKET_RELEASE)
+              .add(14, "days")}
             description="Standard tickets go on sale."
           />
         </section>
       )}
 
-      {tickets.length > 0 && moment.utc().isAfter(constants.Dates.TICKET_RELEASE) && (
-        <section>
-          <h2>Tickets</h2>
-          {tickets.map((t, i) => {
-            return <TicketCard key={i} {...t} />;
-          })}
-        </section>
-      )}
+      {tickets.length > 0 &&
+        moment.utc().isAfter(constants.Dates.TICKET_RELEASE) && (
+          <section>
+            <h2>Tickets</h2>
+            {tickets.map((t, i) => {
+              return <TicketCard key={i} {...t} />;
+            })}
+          </section>
+        )}
     </div>
   );
 };

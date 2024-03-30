@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Color = ({value}) => (
+const Color = ({ value }) => (
   <div className={`Color Color--${value}`}>$color-{value}</div>
 );
 

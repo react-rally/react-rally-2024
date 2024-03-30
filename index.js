@@ -1,19 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Router, Route, IndexRoute, browserHistory} from 'react-router';
-import App from 'App';
-import About from 'screens/About';
-import Conduct from 'screens/Conduct';
-import Home from 'screens/Home';
-import Schedule from 'screens/Schedule';
-import Speakers from 'screens/Speakers';
-import Sponsors from 'screens/Sponsors';
-import Stream from 'screens/Stream';
-import Venue from 'screens/Venue';
-import Workshop from 'screens/Workshop';
-import ga from 'helpers/googleAnalytics';
-import './assets/css/styles.css';
-import './assets/css/responsive.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, browserHistory } from "react-router";
+import App from "App";
+import About from "screens/About";
+import Conduct from "screens/Conduct";
+import Home from "screens/Home";
+import Schedule from "screens/Schedule";
+import Speakers from "screens/Speakers";
+import Sponsors from "screens/Sponsors";
+import Stream from "screens/Stream";
+import Venue from "screens/Venue";
+import Workshop from "screens/Workshop";
+import ga from "helpers/googleAnalytics";
+import "./assets/css/styles.css";
+import "./assets/css/responsive.css";
 
 const NotFound = () => {
   return (
@@ -22,10 +22,10 @@ const NotFound = () => {
       <h1>Sorry, you're looking for something that no longer exists.</h1>
       <section className="highlight">
         <p>
-          But since you're here, why not{' '}
+          But since you're here, why not{" "}
           <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
             watch a video
-          </a>{' '}
+          </a>{" "}
           of our favorite talk from last year?
         </p>
       </section>
@@ -34,7 +34,7 @@ const NotFound = () => {
 };
 
 // Fix history
-(function() {
+(function () {
   const hash = location.hash;
   const redirect = sessionStorage.redirect;
   delete sessionStorage.redirect;
@@ -45,7 +45,7 @@ const NotFound = () => {
   }
   // Fix history for legacy hash history URLs
   else if (hash.trim().length !== 0) {
-    history.replaceState(null, null, hash.replace('#', ''));
+    history.replaceState(null, null, hash.replace("#", ""));
   }
 })();
 
@@ -54,7 +54,8 @@ ReactDOM.render(
     history={browserHistory}
     onUpdate={() => {
       window.scrollTo(0, 0);
-    }}>
+    }}
+  >
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/about" component={About} />
@@ -68,5 +69,5 @@ ReactDOM.render(
       <Route path="*" component={NotFound} />
     </Route>
   </Router>,
-  document.getElementById('container'),
+  document.getElementById("container"),
 );

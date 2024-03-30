@@ -1,5 +1,5 @@
-import React from 'react';
-import Button from 'components/Button';
+import React from "react";
+import Button from "components/Button";
 import { useAppContext } from "App";
 
 export default () => {
@@ -20,10 +20,7 @@ export default () => {
           have questions, please let us know.
         </p>
         <br />
-        <Button
-          className="primary"
-          href={constants.Links.CODE_OF_CONDUCT_FORM}
-        >
+        <Button className="primary" href={constants.Links.CODE_OF_CONDUCT_FORM}>
           Report an Incident
         </Button>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -92,7 +89,7 @@ export default () => {
           workshop venues and conference-related social events.
         </p>
         <p>
-          This Code of Conduct is borrowed from{' '}
+          This Code of Conduct is borrowed from{" "}
           <a href={constants.Links.CODE_OF_CONDUCT} target="_blank">
             Conference Code of Conduct
           </a>
@@ -111,15 +108,25 @@ export default () => {
         </p>
 
         <ul>
-          <li>Submit a Code of Conduct <a href={constants.Links.CODE_OF_CONDUCT_FORM} target="_blank">incident report</a>.</li>
-          <li>Email the organizer team at {' '}
-            <a href={`mailto:${constants.Links.EMAIL_ORGANIZERS}?subject=Code+of+Conduct+Violation`}>
+          <li>
+            Submit a Code of Conduct{" "}
+            <a href={constants.Links.CODE_OF_CONDUCT_FORM} target="_blank">
+              incident report
+            </a>
+            .
+          </li>
+          <li>
+            Email the organizer team at{" "}
+            <a
+              href={`mailto:${constants.Links.EMAIL_ORGANIZERS}?subject=Code+of+Conduct+Violation`}
+            >
               {constants.Links.EMAIL_ORGANIZERS}
-            </a>.
+            </a>
+            .
           </li>
           <li>Call us. Please check our Slack for the staff phone number.</li>
         </ul>
-        
+
         {/*
         <h4>Important Contacts</h4>
 

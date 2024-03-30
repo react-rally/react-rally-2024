@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
-import moment from 'moment';
+import React, { Component } from "react";
+import moment from "moment";
 
-import constants from 'helpers/constants';
-import Button from 'components/Button';
-import Countdown from 'components/Countdown';
+import constants from "helpers/constants";
+import Button from "components/Button";
+import Countdown from "components/Countdown";
 
 // Calculate release time
 let TICKET_RELEASE_TIME;
 const EARLY_BIRD_ONE = moment.utc(constants.Dates.TICKET_RELEASE);
-const EARLY_BIRD_TWO = EARLY_BIRD_ONE.clone().add(7, 'days');
-const STANDARD = EARLY_BIRD_ONE.clone().add(14, 'days');
+const EARLY_BIRD_TWO = EARLY_BIRD_ONE.clone().add(7, "days");
+const STANDARD = EARLY_BIRD_ONE.clone().add(14, "days");
 
 if (moment.utc().isBefore(EARLY_BIRD_ONE)) {
   TICKET_RELEASE_TIME = EARLY_BIRD_ONE;
@@ -41,7 +41,7 @@ export default class Tickets extends Component {
           <Countdown
             date={TICKET_RELEASE_TIME}
             label={`Tickets on sale ${TICKET_RELEASE_TIME.format(
-              'MMMM DD, YYYY',
+              "MMMM DD, YYYY",
             )}...`}
           />
         )}

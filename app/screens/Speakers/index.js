@@ -1,6 +1,6 @@
-import React from 'react';
-import Person from 'components/Person';
-import shuffle from 'helpers/shuffle';
+import React from "react";
+import Person from "components/Person";
+import shuffle from "helpers/shuffle";
 import { useAppContext } from "App";
 
 export default () => {
@@ -10,17 +10,17 @@ export default () => {
     <div className="Speakers">
       <div className="align-center">
         {Object.keys(speakers).length > 0 ? (
-          shuffle(Object.keys(speakers)).map(key => (
+          shuffle(Object.keys(speakers)).map((key) => (
             <Person {...speakers[key]} key={key} />
           ))
         ) : (
           <section className="highlight">
             <p>
               We haven't selected any speakers yet. Why not check out this
-              adorable{' '}
+              adorable{" "}
               <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
                 cat video
-              </a>{' '}
+              </a>{" "}
               while you wait?
             </p>
           </section>

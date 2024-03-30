@@ -1,5 +1,5 @@
-import React from 'react';
-import { getLiveStreamEmbedURL } from 'helpers/livestream';
+import React from "react";
+import { getLiveStreamEmbedURL } from "helpers/livestream";
 import { useAppContext } from "App";
 
 export default () => {
@@ -21,8 +21,11 @@ export default () => {
         <h2>{constants.Meta.CONFERENCE_NAME} Live Stream</h2>
       </div>
       <section className="highlight">
-        The content of {constants.Meta.CONFERENCE_NAME} Live Stream is owned solely by the speakers, presenters, musicians, and instructors who have created and recorded the material presented.
-        Recording, recreating, or redistributing any content without the explicit consent of the owner is expressly forbidden.
+        The content of {constants.Meta.CONFERENCE_NAME} Live Stream is owned
+        solely by the speakers, presenters, musicians, and instructors who have
+        created and recorded the material presented. Recording, recreating, or
+        redistributing any content without the explicit consent of the owner is
+        expressly forbidden.
       </section>
     </div>
   );

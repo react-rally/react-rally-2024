@@ -1,26 +1,24 @@
-import React, { Component, useMemo } from 'react';
-import PropTypes from 'prop-types';
-import cx from 'classnames';
-import { Link } from 'react-router';
-import moment from 'moment';
-import DateUtils from 'helpers/DateUtils';
-import Button from 'components/Button';
-import Countdown from 'components/Countdown';
-import Tickets from 'components/Tickets';
-import Icon from 'components/Icon';
+import React, { Component, useMemo } from "react";
+import PropTypes from "prop-types";
+import cx from "classnames";
+import { Link } from "react-router";
+import moment from "moment";
+import DateUtils from "helpers/DateUtils";
+import Button from "components/Button";
+import Countdown from "components/Countdown";
+import Tickets from "components/Tickets";
+import Icon from "components/Icon";
 import { useAppContext } from "App";
 
 const HomeHeader = () => {
   const { constants } = useAppContext();
-  
-  const CONF_DATES_DISPLAY = constants.Dates.CONF_DAY_ONE === constants.Dates.CONF_DAY_TWO ?
-    moment.utc(constants.Dates.CONF_DAY_ONE).format('MMMM D, YYYY') :
-    (
-      moment.utc(constants.Dates.CONF_DAY_ONE).format('MMMM D') +
-      '-' +
-      moment.utc(constants.Dates.CONF_DAY_TWO).format('D, YYYY')
-    );
 
+  const CONF_DATES_DISPLAY =
+    constants.Dates.CONF_DAY_ONE === constants.Dates.CONF_DAY_TWO
+      ? moment.utc(constants.Dates.CONF_DAY_ONE).format("MMMM D, YYYY")
+      : moment.utc(constants.Dates.CONF_DAY_ONE).format("MMMM D") +
+        "-" +
+        moment.utc(constants.Dates.CONF_DAY_TWO).format("D, YYYY");
 
   const isOpportunityScholarshipAvailable = moment
     .utc()
@@ -43,22 +41,22 @@ const HomeHeader = () => {
     <div className="Home__Header">
       <div className="Home__Header__Wrapper">
         <div className="Home__Header__Wrapper__Content">
-        <img
-          src="assets/dist/img/ReactLogo.svg"
-          alt="React Rally logo"
-          className="Home__Header__Logo"
-        />
-        <div className="Home__Header__Content">
-          <h1>{constants.Meta.EVENT_NAME}</h1>
-          <h2>{CONF_DATES_DISPLAY}</h2>
-          <p>
-            React Rally is a community conference about React and topics
-            interesting to React developers. We focus on a friendly, welcoming
-            atmosphere, engaging talks from new and established speakers, and
-            plenty of hallway-track time to chat with interesting people.
-          </p>
-          <div className="Home__Header__Buttons">
-          {isConferenceLive ? (
+          <img
+            src="assets/dist/img/ReactLogo.svg"
+            alt="React Rally logo"
+            className="Home__Header__Logo"
+          />
+          <div className="Home__Header__Content">
+            <h1>{constants.Meta.EVENT_NAME}</h1>
+            <h2>{CONF_DATES_DISPLAY}</h2>
+            <p>
+              React Rally is a community conference about React and topics
+              interesting to React developers. We focus on a friendly, welcoming
+              atmosphere, engaging talks from new and established speakers, and
+              plenty of hallway-track time to chat with interesting people.
+            </p>
+            <div className="Home__Header__Buttons">
+              {isConferenceLive ? (
                 /*
                 <a
                   className="Button primary large"
@@ -87,7 +85,8 @@ const HomeHeader = () => {
                     <span>
                       <Button
                         href={constants.Links.PROPOSAL_FORM}
-                        className="large primary">
+                        className="large primary"
+                      >
                         Submit Proposal
                       </Button>
                       &nbsp;&nbsp;&nbsp;&nbsp;
@@ -97,7 +96,8 @@ const HomeHeader = () => {
                     <span>
                       <Button
                         href={constants.Links.OPPORTUNITY_SCHOLARSHIP_FORM}
-                        className="large">
+                        className="large"
+                      >
                         Apply For Scholarship
                       </Button>
                       &nbsp;&nbsp;&nbsp;&nbsp;
@@ -108,7 +108,8 @@ const HomeHeader = () => {
               {isHotelAvailable && (
                 <Button
                   href={constants.Links.HOTEL_RESERVATION}
-                  className="large transparent">
+                  className="large transparent"
+                >
                   Book Hotel
                 </Button>
               )}
@@ -123,17 +124,21 @@ const HomeHeader = () => {
 const Navigation = ({ onMenuClick = () => {} }) => {
   const { constants } = useAppContext();
 
-  const NavLink = useMemo(() => ({ children, to }) => {
-    return (
-      <Link
-        activeClassName="active"
-        to={to}
-        onClick={() => onMenuClick(false)}
-      >
-        {children}
-      </Link>
-    )
-  }, [onMenuClick]);
+  const NavLink = useMemo(
+    () =>
+      ({ children, to }) => {
+        return (
+          <Link
+            activeClassName="active"
+            to={to}
+            onClick={() => onMenuClick(false)}
+          >
+            {children}
+          </Link>
+        );
+      },
+    [onMenuClick],
+  );
 
   return (
     <div className="Header__Nav">
@@ -142,7 +147,8 @@ const Navigation = ({ onMenuClick = () => {} }) => {
           to="/"
           id="logo"
           aria-label="Home"
-          onClick={() => onMenuClick(false)}>
+          onClick={() => onMenuClick(false)}
+        >
           <img
             src="assets/dist/img/ReactLogo.svg"
             alt="React logo."
@@ -182,7 +188,10 @@ const Navigation = ({ onMenuClick = () => {} }) => {
         <Icon href="https://twitter.com/ReactRally" type="twitter" />
         <Icon href="https://github.com/react-rally" type="github" />
         <Icon href="https://instagram.com/reactrally" type="instagram" />
-        <Icon href="https://www.youtube.com/channel/UCXBhQ05nu3L1abBUGeQ0ahw" type="youtube" />
+        <Icon
+          href="https://www.youtube.com/channel/UCXBhQ05nu3L1abBUGeQ0ahw"
+          type="youtube"
+        />
         <Button href={constants.Links.TICKET_SALES} className="medium">
           Tickets
         </Button>
@@ -205,21 +214,22 @@ export default class Header extends Component {
   }
 
   render() {
-    const isHomeScreen = this.context.router.isActive('/', true);
-    const {isMenuOpen} = this.state;
+    const isHomeScreen = this.context.router.isActive("/", true);
+    const { isMenuOpen } = this.state;
 
     return (
       <header
-        className={cx('Header', {
+        className={cx("Header", {
           Header__Home: isHomeScreen,
-          'Header--menuOpen': isMenuOpen,
-        })}>
+          "Header--menuOpen": isMenuOpen,
+        })}
+      >
         <Navigation
-          onMenuClick={isOpen => {
-            if (typeof isOpen === 'undefined') {
+          onMenuClick={(isOpen) => {
+            if (typeof isOpen === "undefined") {
               isOpen = !isMenuOpen;
             }
-            this.setState({isMenuOpen: isOpen});
+            this.setState({ isMenuOpen: isOpen });
           }}
         />
         {isHomeScreen && <HomeHeader />}

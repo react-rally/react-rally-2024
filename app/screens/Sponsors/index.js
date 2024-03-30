@@ -1,6 +1,6 @@
-import React from 'react';
-import Button from 'components/Button';
-import Features from 'components/Features';
+import React from "react";
+import Button from "components/Button";
+import Features from "components/Features";
 import { useAppContext } from "App";
 
 export default () => {
@@ -19,12 +19,14 @@ export default () => {
           Download Prospectus
         </Button>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <Button href={`mailto:${constants.Links.EMAIL_ORGANIZERS}`}>Get in Touch</Button>
+        <Button href={`mailto:${constants.Links.EMAIL_ORGANIZERS}`}>
+          Get in Touch
+        </Button>
       </section>
 
       {Object.keys(sponsors)
-        .filter(level => sponsors[level].length > 0)
-        .map(level => {
+        .filter((level) => sponsors[level].length > 0)
+        .map((level) => {
           return (
             <section key={level}>
               <h2>{level}</h2>
@@ -35,7 +37,8 @@ export default () => {
                       key={i}
                       href={sponsor.url}
                       target="_blank"
-                      title={sponsor.name}>
+                      title={sponsor.name}
+                    >
                       <img
                         src={sponsor.image}
                         style={sponsor.style}

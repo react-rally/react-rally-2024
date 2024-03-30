@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default () => {
   return (
@@ -6,7 +6,8 @@ export default () => {
       action="//reactslc.us10.list-manage.com/subscribe/post?u=60285ab3eb049e6f58133e216&amp;id=a146af71b8"
       method="post"
       target="_blank"
-      className="Newsletter">
+      className="Newsletter"
+    >
       <label htmlFor="newsletter__email" className="Newsletter__Label">
         Stay Updated on React Rally
       </label>

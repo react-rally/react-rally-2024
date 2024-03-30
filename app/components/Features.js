@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default ({ featureSet }) => {
   return (
@@ -35,7 +35,7 @@ const renderBody = (featureSet) => {
             <td>{feature.name}</td>
             {renderFeatureLevels(feature.id, featureSet.levels)}
           </tr>
-        )
+        );
       })}
     </tbody>
   );
@@ -60,7 +60,7 @@ const renderFeatureLevels = (featureId, levels) => {
       <td
         key={`${featureId}-${level.name}`}
         dangerouslySetInnerHTML={{
-          __html: level.features.includes(featureId) ? '&#x2713;' : ''
+          __html: level.features.includes(featureId) ? "&#x2713;" : "",
         }}
       />
     );
@@ -69,9 +69,9 @@ const renderFeatureLevels = (featureId, levels) => {
 
 const formatCurrency = (number) => {
   return parseInt(number, 10).toLocaleString(undefined, {
-    style: 'currency',
-    currency: 'USD',
+    style: "currency",
+    currency: "USD",
     minimumFractionDigits: 0,
-    maximumFractionDigits: 0
+    maximumFractionDigits: 0,
   });
 };
