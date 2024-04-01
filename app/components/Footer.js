@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import Button from "components/Button";
 import Icon from "components/Icon";
 import Newsletter from "components/Newsletter";
@@ -77,6 +78,8 @@ export default () => {
             <a href="https://reactutah.com" target="_blank">
               React Utah, LLC
             </a>
+            &nbsp;&bull;&nbsp;
+            <Link to="privacy">Privacy Policy</Link>
           </section>
         </div>
         <div className="Footer__Grid__Right">

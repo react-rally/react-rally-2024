@@ -4,6 +4,7 @@ export default constants;
 constants.Meta = {
   EVENT_NAME: "React Rally",
   CONFERENCE_NAME: "React Rally",
+  COMPANY_NAME: "React Utah, LLC",
 };
 
 constants.Links = {

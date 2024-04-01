@@ -5,6 +5,7 @@ import App from "App";
 import About from "screens/About";
 import Conduct from "screens/Conduct";
 import Home from "screens/Home";
+import Privacy from "screens/Privacy";
 import Schedule from "screens/Schedule";
 import Speakers from "screens/Speakers";
 import Sponsors from "screens/Sponsors";
@@ -66,6 +67,7 @@ ReactDOM.render(
       <Route path="/stream" component={Stream} />
       <Route path="/venue" component={Venue} />
       <Route path="/workshop" component={Workshop} />
+      <Route path="/privacy" component={Privacy} />
       <Route path="*" component={NotFound} />
     </Route>
   </Router>,
