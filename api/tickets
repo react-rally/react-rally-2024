@@ -18,17 +18,6 @@
     "soldOut": false
   },
   {
-    "name": "Late Bird",
-    "price": 550,
-    "description": "Better late than never! One ticket to React Rally. Swag is not guaranteed.",
-    "soldOut": false
-  },
-  {
-    "name": "Significant Other Activity Ticket",
-    "price": 20,
-    "description": "Activities will be held both August 22 and August 23 in the evening after the conference. Purchase this ticket and bring your significant other along for the fun."
-  },
-  {
     "name": "Charitable Donation",
     "price": "-",
     "description": "All proceeds from this ticket will be donated to Black Girls Code. This won't grant you entrance to the conference, but it will help you feel good."

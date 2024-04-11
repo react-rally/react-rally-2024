@@ -68,15 +68,14 @@ export default () => {
         </section>
       )}
 
-      {tickets.length > 0 &&
-        moment.utc().isAfter(constants.Dates.TICKET_RELEASE) && (
-          <section>
-            <h2>Tickets</h2>
-            {tickets.map((t, i) => {
-              return <TicketCard key={i} {...t} />;
-            })}
-          </section>
-        )}
+      {tickets.length > 0 && (
+        <section>
+          <h2>Tickets</h2>
+          {tickets.map((t, i) => {
+            return <TicketCard key={i} {...t} />;
+          })}
+        </section>
+      )}
     </div>
   );
 };
