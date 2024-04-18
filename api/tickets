@@ -3,7 +3,7 @@
     "name": "Early Bird - Round One",
     "price": 400,
     "description": "Early bird tickets for React Rally! 20% off because we love early bird ticket buyers.",
-    "soldOut": false
+    "soldOut": true
   },
   {
     "name": "Early Bird - Round Two",
