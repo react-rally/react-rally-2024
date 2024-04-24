@@ -6,5 +6,21 @@
     "github": "shrutikapoor08",
     "featured": true,
     "avatar": "assets/dist/img/speakers/shrutikapoor08.jpg"
+  },
+  "kapehe_ok": {
+    "name": "Kapehe",
+    "title": "Developer community manager at Sanity.io",
+    "twitter": "kapehe_ok",
+    "github": "kapehe-ok",
+    "featured": true,
+    "avatar": "assets/dist/img/speakers/kapehe_ok.jpg"
+  },
+  "chris__sev": {
+    "name": "Chris Sev",
+    "title": "Devrel at Sourcegraph",
+    "twitter": "chris__sev",
+    "github": "chris-sev",
+    "featured": true,
+    "avatar": "assets/dist/img/speakers/chris__sev.jpg"
   }
 }
