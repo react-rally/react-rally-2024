@@ -44,7 +44,7 @@ export default () => {
         </section>
 
         <section className="Workshop__Sessions__Item">
-          <h2>Full Stack Foundations</h2>
+          <h2>React Server Components and Actions</h2>
 
           <p>
             A <strong>one day</strong> workshop held{" "}
