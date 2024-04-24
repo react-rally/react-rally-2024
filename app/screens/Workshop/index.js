@@ -5,111 +5,103 @@ import Person from "components/Person";
 export default () => {
   const { constants } = useAppContext();
 
-  return null;
+  return (
+    <div className="Workshop">
+      <section className="highlight">
+        {constants.Meta.EVENT_NAME} features two incredible workshops preceding
+        the conference. Come sharpen your skills with expert instruction from
+        some of the most knowledgable people in the React community. Whether you
+        are a newcomer to React wanting to get your feet wet, or have been using
+        React for years our workshops have something to offer you!
+      </section>
 
-  // return (
-  //   <div className="Workshop">
-  //     <section className="highlight">
-  //       {constants.Meta.EVENT_NAME} features two incredible workshops preceding
-  //       the conference. Come sharpen your skills with expert instruction from
-  //       some of the most knowledgable people in the React community. Whether you
-  //       are a newcomer to React wanting to get your feet wet, or have been using
-  //       React for years our workshops have something to offer you!
-  //     </section>
-  //
-  //     <div className="Workshop__Sessions">
-  //       <section className="Workshop__Sessions__Item">
-  //         <h2>Intro to React</h2>
-  //
-  //         <p>
-  //           A <strong>one day</strong> workshop held{" "}
-  //           <strong>August 16, 2023</strong> being taught by{" "}
-  //           <strong>Michael Chan</strong>.
-  //         </p>
-  //
-  //         <p>
-  //           React can be overwhelming, with countless concepts and a rich
-  //           history to navigate. That's why we've crafted this
-  //           beginner-friendly, workshop to help you carve a path through the
-  //           React ecosystem. Our seasoned instructor, chantastic, will be your
-  //           guide, offering expert insight and support. Together, you'll explore
-  //           JSX WTF’s, styling approaches, composition patterns, TypeScript
-  //           fundamentals, powerful code organization, editor superpowers, and so
-  //           much more. By the end of the workshop, you'll possess the skills and
-  //           confidence to build React apps independently or collaboratively.
-  //         </p>
-  //
-  //         <p>
-  //           As a React Rally speaker and MC, chantastic knows precisely what you
-  //           need to make the most of the conference. Let us clear the path to
-  //           success, ensuring your React learning experience is both enjoyable
-  //           and rewarding!
-  //         </p>
-  //
-  //         <Person
-  //           name="Michael Chan"
-  //           avatar="https://avatars.githubusercontent.com/u/658360?v=4"
-  //           twitter="chantastic"
-  //           github="chantastic"
-  //         />
-  //       </section>
-  //
-  //       <section className="Workshop__Sessions__Item">
-  //         <h2>Full Stack Foundations</h2>
-  //
-  //         <p>
-  //           A <strong>one day</strong> workshop held{" "}
-  //           <strong>August 16, 2023</strong> being taught by{" "}
-  //           <strong>Kent C. Dodds</strong>.
-  //         </p>
-  //
-  //         <p>
-  //           You're busy shipping software,
-  //           <br />
-  //           <br />
-  //           You've got tons of responsibility.
-  //           <br />
-  //           <br />
-  //           Solving problems with the simplest, most optimal pattern is
-  //           absolutely one of them.
-  //           <br />
-  //           <br />
-  //           Shipping quickly is another.
-  //           <br />
-  //           <br />
-  //           In your rush to get things out the door, you can often skip over
-  //           many important foundational concepts that would simplify your life a
-  //           great deal without even knowing it. Even if you've been doing this
-  //           for a long time, keeping up with advancements in software
-  //           development is challenging (I promise, you don't have to use{" "}
-  //           <code>display: table</code> to vertically center divs anymore 😩).
-  //           <br />
-  //           <br />
-  //           This workshop will fill gaps in your knowledge you didn't even know
-  //           you had and update your mental models for the NOW!
-  //           <br />
-  //           <br />
-  //           In the time we go through this together, we'll cover modern best
-  //           practices across the stack:
-  //           <br />
-  //           <ul>
-  //             <li>Styling</li>
-  //             <li>Routing</li>
-  //             <li>Loading & Mutating Data</li>
-  //             <li>Client-side Scripting</li>
-  //           </ul>
-  //           We'll cover a lot of ground, giving you a solid foundation for
-  //           everything else you do on the web. ⚡️
-  //         </p>
-  //
-  //         <Person
-  //           name="Kent C. Dodds"
-  //           avatar="https://avatars.githubusercontent.com/u/1500684?v=4"
-  //           twitter="kentcdodds"
-  //           github="kentcdodds"
-  //         />
-  //       </section>
-  //     </div>
-  //   </div>
-  // );
+      <div className="Workshop__Sessions">
+        <section className="Workshop__Sessions__Item">
+          <h2>Advanced React: Lessons from 10 Years</h2>
+
+          <p>
+            A <strong>one day</strong> workshop held{" "}
+            <strong>August 14, 2024</strong> being taught by{" "}
+            <strong>Cory House</strong>.
+          </p>
+
+          <p>
+            In this session we'll explore 8 ways to handle state in React apps,
+            common state management mistakes, performance optimizations,
+            useEffect alternatives, key third-party libraries, TypeScript tips,
+            reusable component design patterns, devtools and extensions, file
+            structures, and novel React workflows. Bring your laptop, because
+            we'll implement many ideas together. This workshop encapsulates
+            hard-learned lessons from specializing in React for a full decade.
+          </p>
+
+          <Person
+            name="Cory House"
+            avatar="assets/dist/img/speakers/housecor.jpg"
+            twitter="housecor"
+            github="coryhouse"
+          />
+        </section>
+
+        <section className="Workshop__Sessions__Item">
+          <h2>Full Stack Foundations</h2>
+
+          <p>
+            A <strong>one day</strong> workshop held{" "}
+            <strong>August 14, 2024</strong> being taught by{" "}
+            <strong>Kent C. Dodds</strong>.
+          </p>
+
+          <p>
+            You’re interested in how far React can take the component model.
+            Everyone is. While React has not yet officially released server
+            components and actions as features in a stable version of React, you
+            want to understand how these features work because you’d like to use
+            them within one of the frameworks built on top of React which has
+            support for them.
+          </p>
+
+          <p>
+            In this workshop we won’t be using any frameworks. In fact you might
+            say we’ll be building our own framework. It’s important for you to
+            understand at least one or two layers below where you typically
+            operate to be able to use your abstractions effectively. So we’ll be
+            working with the raw/unreleased/experimental/futuristic APIs for
+            React Server Components and React Server Actions.
+          </p>
+
+          <p>
+            Once you finish this workshop, you’ll finally have the proper mental
+            model for what server components and actions will do for you as an
+            every day React app developer. Whatever kind of React app you’re
+            building (and whatever architecture you have), you’ll find ways to
+            apply these future features to your application eventually and after
+            this workshop you’ll be eager to do so for the DX and UX
+            improvements they provide.
+          </p>
+
+          <p>
+            In this workshop we’ll cover:
+            <ul>
+              <li>
+                The relationship between client and server components and their
+                respective module graphs
+              </li>
+              <li>Streaming serialized React elements</li>
+              <li>Submitting forms to server actions</li>
+              <li>Managing pending state for server actions</li>
+              <li>Providing great loading UX with optimistic UI</li>{" "}
+            </ul>
+          </p>
+
+          <Person
+            name="Kent C. Dodds"
+            avatar="assets/dist/img/speakers/kentcdodds.jpg"
+            twitter="kentcdodds"
+            github="kentcdodds"
+          />
+        </section>
+      </div>
+    </div>
+  );
 };

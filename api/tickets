@@ -18,6 +18,18 @@
     "soldOut": false
   },
   {
+    "name": "Advanced React Workshop",
+    "price": 500,
+    "description": "Join Cory House for a full day of training with his React workshop August 14.",
+    "soldOut": false
+  },
+  {
+    "name": "Full Stack Foundations Workshop",
+    "price": 500,
+    "description": "Join Kent C. Dodds for a full day of training with his Remix workshop August 14.",
+    "soldOut": false
+  },
+  {
     "name": "Charitable Donation",
     "price": "-",
     "description": "All proceeds from this ticket will be donated to Black Girls Code. This won't grant you entrance to the conference, but it will help you feel good."

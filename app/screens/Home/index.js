@@ -71,9 +71,15 @@ export default () => {
       {tickets.length > 0 && (
         <section>
           <h2>Tickets</h2>
-          {tickets.map((t, i) => {
-            return <TicketCard key={i} {...t} />;
-          })}
+          {tickets
+            .sort((a, b) => {
+              if (a.soldOut && !b.soldOut) return 1;
+              if (!a.soldOut && b.soldOut) return -1;
+              return 0;
+            })
+            .map((t, i) => {
+              return <TicketCard key={i} {...t} />;
+            })}
         </section>
       )}
     </div>
