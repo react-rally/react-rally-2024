@@ -10,7 +10,53 @@ import UpcomingDate from "./UpcomingDate";
 import TicketCard from "./TicketCard";
 
 export default () => {
-  const { constants, speakers, tickets } = useAppContext();
+  const { constants, speakers, tickets: _tickets } = useAppContext();
+
+  const dates = React.useMemo(
+    () =>
+      [
+        {
+          date: constants.Dates.CFP_OPEN,
+          description: "Call for Proposals opens.",
+        },
+        {
+          date: constants.Dates.CFP_CLOSE,
+          description: "Call for Proposals closes.",
+        },
+        {
+          date: constants.Dates.TICKET_RELEASE,
+          description: "Early Bird Tickets (round one) go on sale.",
+        },
+        {
+          date: moment.utc(constants.Dates.TICKET_RELEASE).add(7, "days"),
+          description: "Early Bird Tickets (round two) go on sale.",
+        },
+        {
+          date: moment.utc(constants.Dates.TICKET_RELEASE).add(14, "days"),
+          description: "Standard tickets go on sale.",
+        },
+      ].sort((a, b) => {
+        const isAAfter = moment.utc().isAfter(a.date);
+        const isBAfter = moment.utc().isAfter(b.date);
+
+        if (isAAfter && !isBAfter) return 1;
+        if (!isAAfter && isBAfter) return -1;
+
+        return 0;
+      }),
+    [constants],
+  );
+
+  const tickets = React.useMemo(
+    () =>
+      _tickets.sort((a, b) => {
+        if (a.soldOut && !b.soldOut) return 1;
+        if (!a.soldOut && b.soldOut) return -1;
+
+        return 0;
+      }),
+    [constants],
+  );
 
   return (
     <div className="Home">
@@ -38,48 +84,21 @@ export default () => {
         </section>
       )}
 
-      {true && (
+      {dates.length > 0 && (
         <section>
           <h2>Upcoming Dates</h2>
-          <UpcomingDate
-            timestamp={constants.Dates.CFP_OPEN}
-            description="Call for Proposals opens."
-          />
-          <UpcomingDate
-            timestamp={constants.Dates.CFP_CLOSE}
-            description="Call for Proposals closes."
-          />
-          <UpcomingDate
-            timestamp={constants.Dates.TICKET_RELEASE}
-            description="Early Bird Tickets (round one) go on sale."
-          />
-          <UpcomingDate
-            timestamp={moment
-              .utc(constants.Dates.TICKET_RELEASE)
-              .add(7, "days")}
-            description="Early Bird Tickets (round two) go on sale."
-          />
-          <UpcomingDate
-            timestamp={moment
-              .utc(constants.Dates.TICKET_RELEASE)
-              .add(14, "days")}
-            description="Standard tickets go on sale."
-          />
+          {dates.map(({ date, description }) => (
+            <UpcomingDate timestamp={date} description={description} />
+          ))}
         </section>
       )}
 
       {tickets.length > 0 && (
         <section>
           <h2>Tickets</h2>
-          {tickets
-            .sort((a, b) => {
-              if (a.soldOut && !b.soldOut) return 1;
-              if (!a.soldOut && b.soldOut) return -1;
-              return 0;
-            })
-            .map((t, i) => {
-              return <TicketCard key={i} {...t} />;
-            })}
+          {tickets.map((t, i) => (
+            <TicketCard key={i} {...t} />
+          ))}
         </section>
       )}
     </div>
