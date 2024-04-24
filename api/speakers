@@ -1,2 +1,10 @@
 {
+  "shrutikapoor08": {
+    "name": "Shruti Kapoor",
+    "title": "Senior Software Engineer, TC39 delegate, EggHead Instructor, DevJoke lover",
+    "twitter": "shrutikapoor08",
+    "github": "shrutikapoor08",
+    "featured": true,
+    "avatar": "assets/dist/img/speakers/shrutikapoor08.jpg"
+  }
 }
