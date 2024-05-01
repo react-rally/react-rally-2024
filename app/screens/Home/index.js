@@ -12,39 +12,51 @@ import TicketCard from "./TicketCard";
 export default () => {
   const { constants, speakers, tickets: _tickets } = useAppContext();
 
+  const _dates = React.useMemo(
+    () => [
+      {
+        date: constants.Dates.CFP_OPEN,
+        description: "Call for Proposals opens.",
+      },
+      {
+        date: constants.Dates.CFP_CLOSE,
+        description: "Call for Proposals closes.",
+      },
+      {
+        date: constants.Dates.TICKET_RELEASE,
+        description: "Early Bird Tickets (round one) go on sale.",
+      },
+      {
+        date: moment.utc(constants.Dates.TICKET_RELEASE).add(7, "days"),
+        description: "Early Bird Tickets (round two) go on sale.",
+      },
+      {
+        date: moment.utc(constants.Dates.TICKET_RELEASE).add(14, "days"),
+        description: "Standard tickets go on sale.",
+      },
+    ],
+    [constants],
+  );
+
+  const hasUpcomingDates = React.useMemo(
+    () => _dates.some((d) => moment.utc().isAfter(moment.utc(d))),
+    [_dates],
+  );
+
   const dates = React.useMemo(
     () =>
-      [
-        {
-          date: constants.Dates.CFP_OPEN,
-          description: "Call for Proposals opens.",
-        },
-        {
-          date: constants.Dates.CFP_CLOSE,
-          description: "Call for Proposals closes.",
-        },
-        {
-          date: constants.Dates.TICKET_RELEASE,
-          description: "Early Bird Tickets (round one) go on sale.",
-        },
-        {
-          date: moment.utc(constants.Dates.TICKET_RELEASE).add(7, "days"),
-          description: "Early Bird Tickets (round two) go on sale.",
-        },
-        {
-          date: moment.utc(constants.Dates.TICKET_RELEASE).add(14, "days"),
-          description: "Standard tickets go on sale.",
-        },
-      ].sort((a, b) => {
-        const isAAfter = moment.utc().isAfter(a.date);
-        const isBAfter = moment.utc().isAfter(b.date);
+      hasUpcomingDates
+        ? _dates.sort((a, b) => {
+            const isAAfter = moment.utc().isAfter(a.date);
+            const isBAfter = moment.utc().isAfter(b.date);
 
-        if (isAAfter && !isBAfter) return 1;
-        if (!isAAfter && isBAfter) return -1;
+            if (isAAfter && !isBAfter) return 1;
+            if (!isAAfter && isBAfter) return -1;
 
-        return 0;
-      }),
-    [constants],
+            return 0;
+          })
+        : [],
+    [_dates, hasUpcomingDates],
   );
 
   const tickets = React.useMemo(
