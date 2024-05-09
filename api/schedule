@@ -1,6 +1,192 @@
 {
   "dayOne": [
+    {
+      "time": "6:00 am",
+      "title": "Morning bike ride, hike, or trail run",
+      "description": "Get a start to your day enjoying nature"
+    },
+    {
+      "time": "7:00 am",
+      "title": "Registration"
+    },
+    {
+      "time": "7:30 am",
+      "title": "Breakfast"
+    },
+    {
+      "time": "9:00 am",
+      "title": "TBA",
+      "description": "",
+      "speaker": ["kapehe_ok", "chris__sev"]
+    },
+    {
+      "time": "9:30 am",
+      "title": "Build your own React Metaframework",
+      "description": "This session will explore what exactly a metaframework like Next.js or Remix is, what responsibilities they take on, and how they differ from each other, all by building a custom metaframework live on stage.",
+      "speaker": "devagrawal09"
+    },
+    {
+      "time": "10:00 am",
+      "title": "Break"
+    },
+    {
+      "time": "10:30 am",
+      "title": "Deep Dive into the CodeLand Of Javascript Generators 🚀",
+      "description": "In this talk I will dive deep into the world of Javascript Generators - how they work and how to use them to write better clean, memory-efficient, and maintainable code.",
+      "speaker": "aakansha1216"
+    },
+    {
+      "time": "11:00 am",
+      "title": "TypeScript, the hard way",
+      "description": "Is it possible to build a type-safe React component that can be rendered as any other component? We'll dive into lesser-used, but powerful TypeScript features while building a polymorphic react component.",
+      "speaker": "TheSonOfThomp"
+    },
+    {
+      "time": "11:30 am",
+      "title": "React 19 for the Rest of Us",
+      "description": "React 19 introduces a lot of stuff, including server-side behaviors like cache, server form actions, and more. How's a newcomer expected to learn all of this? In this talk!",
+      "speaker": "crutchcorn"
+    },
+    {
+      "time": "12:00 pm",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00 pm",
+      "title": "Let's Fight: React Framework Showdown 🥊",
+      "description": "Choosing the best framework is tough, isn't it? We've got Next.js, Remix, and a bunch of others thrown into the mix. So, let's keep it real in this talk—I'll be comparing three of the big contenders: Next.js, Remix, and one surprise package.\n\nWe'll be looking at some key stuff like Data fetching, Routing, SEO, Performance, Server-side Rendering, and more. Think of it like a friendly showdown where these frameworks go head-to-head in a fair and square matchup.\n\nWe'll dish out points and see who comes out on top, highlighting which framework rocks for different uses and helping you out with your next project. And hey, no favoritism here—I'll be keeping it neutral and backing it all up with real-world examples.",
+      "speaker": "kulkarniankita9"
+    },
+    {
+      "time": "2:30 pm",
+      "title": "Level Up Your React Development: Unveiling the Gems of ECMAScript 2024 (ES15)",
+      "description": "Calling all React developers! Buckle up for a dive into the treasure trove of ECMAScript 2024 (ES15)! This session unlocks the secrets of this latest JavaScript iteration, empowering you to write cleaner, more efficient, and powerful code.\n\nGet ready to supercharge your JavaScript skills! We'll embark on a thrilling journey through ES15's most valuable features. We'll crack open the mysteries of well-formed Unicode strings, atomic waitSync, and the pipeline operator, all designed to streamline your code and boost readability.\n\nNext, we'll unveil a brand new data storage approach: records and tuples. Discover how these innovative structures can help you organize your data like a pro and write tighter code.\n\nPrepare to be amazed by decorators and pattern matching! We'll show you how decorators can sprinkle extra functionality onto your code without messing with its core. Pattern matching, on the other hand, equips you with a powerful tool to handle various data types and conditions with ease.\n\nThe Temporal API is another gem waiting to be unearthed in ES2024. This API equips you with a robust toolkit for handling dates and times, making those pesky date-time operations a breeze.\n\nBy the end of this session, you'll be a bonafide ES2024 champion, ready to take your JavaScript development to the next level!",
+      "speaker": "frankvisaggio"
+    },
+    {
+      "time": "3:00 pm",
+      "title": "Break"
+    },
+    {
+      "time": "3:30 pm",
+      "title": "Creating Custom DevTools for Your React App",
+      "description": "Modern React apps authenticate users, make HTTP calls, interact with third parties, contain feature toggles, and handle errors. But how do we reliably recreate and configure all these behaviors? In this session, I'll share a pattern for implementing custom dev tools to support automated testing and rapid feedback development. After this session, you'll understand how to design and implement custom tools, so you can run your application in a variety of configurations, quickly.",
+      "speaker": "housecor"
+    },
+    {
+      "time": "4:00 pm",
+      "title": "React to the Future: A Hands-on Guide to AI Integration with Open Source and Close Models",
+      "description": "Innovate your React projects with AI model. Learn to build intelligent user experiences like personalized recommendations, chatbots, and creative content generation. Master open-source libraries and access powerful private models. Gain hands-on experience and learn how to build the next generation of web apps.",
+      "speaker": "aileenvl"
+    },
+    {
+      "time": "4:30 pm",
+      "title": "Harness the Power of Durable, Event-Driven Workflows",
+      "description": "Orchestrating complex workflows and background jobs can be a nightmare, but it doesn't have to be.\n\nWe will look at how to level up your React apps regardless of framework with portable efficient durable event-driven workflows and background jobs.",
+      "speaker": "jhooks"
+    },
+    {
+      "time": "6:00 pm",
+      "title": "Dinner",
+      "description": "Dinner with your new friends!"
+    },
+    {
+      "time": "8:00 pm",
+      "title": "Party",
+      "description": ""
+    }
   ],
   "dayTwo": [
+    {
+      "time": "6:00 am",
+      "title": "Morning bike ride, hike, or trail run",
+      "description": "Get a start to your day enjoying nature"
+    },
+    {
+      "time": "7:30 am",
+      "title": "Breakfast"
+    },
+    {
+      "time": "8:30 am",
+      "title": "Registration"
+    },
+    {
+      "time": "9:00 am",
+      "title": "Optimizing performance of React apps",
+      "description": "In this hands-on talk where we'll explore React's useMemo and useCallback hooks together. As a React Developer at Slack, I'm excited to share insights from my journey, including experiences at Slack as a Front End Developer. These hooks have become invaluable in my work, allowing me to optimize app performance by minimizing re-renders and computations. We'll break down their usage and show practical examples to make it easy to understand. By the end, you'll feel confident using these hooks to boost your React apps' efficiency.",
+      "speaker": "shrutikapoor08"
+    },
+    {
+      "time": "9:30 am",
+      "title": "AI for React Developers: Opportunities, Learning, and Innovation",
+      "description": "Artificial Intelligence (AI) is now a must-have in software development, and the demand for AI engineers is rising through the roof. As a React developer, it is a good chance to grow and expand.\n\nMany React developers might wonder: \"What do I need to know about AI? and do I have what it takes?\" With AI reshaping industries, the pressure to adapt and expand our skillsets is palpable. The question isn't just about staying relevant; it's about seizing unprecedented opportunities in development and automation.\n\nWhat if learning AI could help you do more with React? Think about using AI to help with coding, or to make smarter apps faster. This talk will show you how to start.\n\nin this talk, we'll demystify the role of an AI engineer and outline the essential skills React developers need to transition into this evolving field.\n\nYou'll leave knowing how to use AI in your React projects and the exciting things you can do with it. Whether it's getting a new job or making your own AI-driven apps, there's a lot to look forward to for React developers who are ready to learn AI.",
+      "speaker": "alexadark"
+    },
+    {
+      "time": "10:00 am",
+      "title": "Break"
+    },
+    {
+      "time": "10:30 am",
+      "title": "React and the Art of Gamification",
+      "description": "Unlock the power of gamification in your React applications to enhance user engagement and enjoyment. Dive into React's versatile architecture and component-based approach, ideal for seamlessly integrating game mechanics like scoring, achievements, and interactive challenges. Drawing on principles from educational settings, discover the psychology behind gamification and learn how to apply these concepts in React to create compelling user experiences that keep users coming back.",
+      "speaker": "c_yatteau"
+    },
+    {
+      "time": "11:00 am",
+      "title": "Data Fetching Strategies with React Server Components",
+      "description": "Let's dive into data fetching techniques and strategies in the context of React Server Components. We'll learn how to minimize over-fetching, reduce latency, and improve user experience through data retrieval and caching mechanisms.",
+      "speaker": "iamtylerwclark"
+    },
+    {
+      "time": "11:30 am",
+      "title": "A nerdy guide to the web trending concepts",
+      "description": "The web! A vast container of knowledge, concepts, and things we do not always understand.\n\nTerms like Server Components, Hydration, Fine-Grained Reactivity, Resumability, and many others are thrown around daily, but often, we don't fully grasp them.\n\nJoin this interactive adventure straight from the pages of a comic book as your favorite heroes and villains help you understand some of the most discussed topics on the web now.",
+      "speaker": "danieljcafonso"
+    },
+    {
+      "time": "12:00 pm",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00 pm",
+      "title": "Pixels, Promises, and Panic: Horror Stories of Production Nightmares",
+      "description": "Join me for \"Pixels, Promises, and Panic\" as we delve into the world of frontend mishaps. We'll share 4-5 real-life horror stories from the trenches of web development. From baffling browser bugs to cringe-worthy code catastrophes, these tales are a mix of humor and caution. Whether you're a seasoned developer or just starting out, these stories will entertain, enlighten, and remind us all of the unexpected twists and turns in the world of coding.",
+      "speaker": "neciudan"
+    },
+    {
+      "time": "2:30 pm",
+      "title": "Building Your Front-End with Intention: Architecture and Tooling for your next Front-End project!",
+      "description": "Front-End code bases can quickly become really difficult to maintain or add new features to. This mainly comes from our Front-End components being highly coupled either through poorly written CSS or components having too many responsibilities.\n\nBut there is a way we can avoid these such code bases.\n\nWe will learn in this talk how building your Front-End Architecture with intention will keep code bases manageable and easy to reason about, allowing for rapid development and easily responding to changing requirements. And we will also learn how this also leads to code bases that’s easier for new people to onboard and contribute to, allowing them to learn the code base at their own pace.\n\nThis is done by leveraging Component-Driven Design and Brad’s Frost’s Atomic Design to promote component isolation. With the attributes these architectural decisions promote, we can leverage techniques such as Functional CSS to further promote component isolation by inverting the flow of control of our CSS. These and other tools and techniques will allow us to build a code base of loosely coupled components, where Engineers only need to understand the component they are working in to start providing value.\n\nBy the end of this talk, those in attendance will have the tools they’ll need to build or migrate their code bases to something more loosely coupled, decreasing Engineering time for tasks, promoting rapid iteration and simply making a Front-End code base much more of a joy to work in.",
+      "speaker": "Chad_R_Stewart"
+    },
+    {
+      "time": "3:00 pm",
+      "title": "Break"
+    },
+    {
+      "time": "3:30 pm",
+      "title": "The Call-up: Making it to the Data Viz Big Leagues",
+      "description": "It’s a well-known fact that the flexibility of D3 comes with a steep learning curve and some added considerations in React, but, for many, the ability to build highly customized data viz is essential.\n\nOver the past year, I have transitioned my team from using high-level plotting tools in React to a low-level D3 wrapper, visx. In this talk, we’ll explore the rationale for this transition, how to approach the process and how to empower a team to take the leap to D3 with you. We’ll also discuss some of the challenges you might face along the way and how to address them.",
+      "speaker": "rebekahcallari"
+    },
+    {
+      "time": "4:00 pm",
+      "title": "Conducting React's Ensemble: Mastering Complex State with Advanced Hooks and Context Techniques",
+      "description": "As React applications grow in complexity, so does the challenge of managing their state in a way that is both efficient and maintainable. \"Conducting React's Ensemble: Mastering Complex State with Advanced Hooks and Context Techniques\" offers a deep dive into sophisticated patterns and practices that push the boundaries of what's possible with React's state management tools.\n\nThis session will begin with a brief review of the fundamental concepts of Hooks and the Context API, setting the stage for a journey into their more advanced applications. We will explore the composition of custom Hooks to encapsulate and reuse stateful logic across components, ensuring a cleaner, more modular codebase.\n\nDelving deeper, we will dissect the intricate dance between the Context API and Hooks to manage global state in a React application. Through detailed code walkthroughs and real-life case studies, attendees will learn how to leverage Context in tandem with custom Hooks to create a lightweight yet powerful state management system, rivaling traditional solutions like Redux in both simplicity and efficiency.\n\nThis talk promises to arm you with the advanced skills and innovative techniques needed to tackle the most complex state scenarios, turning challenging state management tasks into harmonious solutions that enhance the performance and maintainability of your React applications.",
+      "speaker": "Renaldig"
+    },
+    {
+      "time": "4:30 pm",
+      "title": "And Now You Understand React Server Components",
+      "description": "You want to keep up with the future of React. React has evolved over the years and continues to push the component model further and further. Out of all the evolutions of React, server components are certainly the biggest advancement. It expands the component model further than ever before and as a result, requires some rethinking. Seasoned React developers need to unlearn the way we used to do things to be able to understand the improvements that React Server Components offer.\n\nIn this talk, Kent will guide you through React Server Components start to finish so you can understand how React Server Components work and set you off on your journey into the future of components everywhere!",
+      "speaker": "kentcdodds"
+    },
+    {
+      "time": "6:00 pm",
+      "title": "After Party",
+      "description": "Join us for dinner and fun!"
+    }
   ]
 }
+

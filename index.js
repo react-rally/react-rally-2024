@@ -61,13 +61,13 @@ ReactDOM.render(
       <IndexRoute component={Home} />
       <Route path="/about" component={About} />
       <Route path="/conduct" component={Conduct} />
+      <Route path="/privacy" component={Privacy} />
       <Route path="/schedule" component={Schedule} />
       <Route path="/speakers" component={Speakers} />
       <Route path="/sponsors" component={Sponsors} />
       <Route path="/stream" component={Stream} />
       <Route path="/venue" component={Venue} />
       <Route path="/workshop" component={Workshop} />
-      <Route path="/privacy" component={Privacy} />
       <Route path="*" component={NotFound} />
     </Route>
   </Router>,
