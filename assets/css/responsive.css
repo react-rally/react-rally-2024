@@ -307,6 +307,9 @@
     top: 30px;
     right: 0;
   }
+  .Schedule__Menu {
+    flex-direction: column;
+  }
 
   .Workshop__Sessions {
     flex-direction: column;

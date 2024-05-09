@@ -8,8 +8,11 @@ import scheduleInterval from "helpers/scheduleInterval";
 import ScheduleData from "../../../api/schedule";
 import SpeakerData from "../../../api/speakers";
 
-const CONF_DAY_ONE_DATE = moment.utc(constants.Dates.CONF_DAY_ONE);
-const CONF_DAY_TWO_DATE = moment.utc(constants.Dates.CONF_DAY_TWO);
+const CONF_DAYS = {
+  dayOne: moment.utc(constants.Dates.CONF_DAY_ONE),
+  dayTwo: moment.utc(constants.Dates.CONF_DAY_TWO),
+  dayThree: moment.utc(constants.Dates.CONF_DAY_THREE),
+};
 
 function parseTimeString(str) {
   if (!str) return [];
@@ -80,12 +83,23 @@ export default class extends React.Component {
   constructor(props) {
     super(props);
 
+    // Determine selected day by today's date if possible
+    const selectedDay = (() => {
+      const keys = Object.keys(CONF_DAYS);
+
+      for (let i = 0; i < keys.length; i++) {
+        const key = keys[i];
+
+        if (moment.utc().isSame(CONF_DAYS[key], "day")) {
+          return key;
+        }
+      }
+
+      return "dayOne";
+    })();
+
     this.state = {
-      // Default showing day two schedule if day two is today
-      // TODO this isn't working since switching to moment
-      selectedDay: moment.utc().isSame(CONF_DAY_TWO_DATE, "day")
-        ? "dayTwo"
-        : "dayOne",
+      selectedDay,
     };
   }
 
@@ -130,33 +144,23 @@ export default class extends React.Component {
   renderMenu() {
     return (
       <menu className="Schedule__Menu">
-        <a
-          href="javascript://"
-          onClick={this.handleMenuItemClick.bind(this, "dayOne")}
-          className={cx("Schedule__Menu__Item", {
-            "Schedule__Menu__Item--active": this.state.selectedDay === "dayOne",
-          })}
-        >
-          {CONF_DAY_ONE_DATE.format("dddd, MMMM D")}
-        </a>
-        <a
-          href="javascript://"
-          onClick={this.handleMenuItemClick.bind(this, "dayTwo")}
-          className={cx("Schedule__Menu__Item", {
-            "Schedule__Menu__Item--active": this.state.selectedDay === "dayTwo",
-          })}
-        >
-          {CONF_DAY_TWO_DATE.format("dddd, MMMM D")}
-        </a>
+        {Object.keys(CONF_DAYS).map((k) => (
+          <a
+            href="javascript://"
+            onClick={this.handleMenuItemClick.bind(this, k)}
+            className={cx("Schedule__Menu__Item", {
+              "Schedule__Menu__Item--active": this.state.selectedDay === k,
+            })}
+          >
+            {CONF_DAYS[k].format("dddd, MMMM D")}
+          </a>
+        ))}
       </menu>
     );
   }
 
   render() {
-    let selectedDay =
-      this.state.selectedDay === "dayOne"
-        ? CONF_DAY_ONE_DATE
-        : CONF_DAY_TWO_DATE;
+    let selectedDay = CONF_DAYS[this.state.selectedDay];
     let schedule = ScheduleData[this.state.selectedDay];
 
     return (
@@ -219,8 +223,14 @@ export default class extends React.Component {
             })}
             {this.renderMenu()}
 
-            <p>
-              Please note that this schedule is tentative and subject to change.
+            <p className="Schedule__Footnote">
+              <small>
+                &dagger; This schedule is tentative and subject to change.
+              </small>
+              <small>
+                &dagger;&dagger; Attending the workshop day August 14th requires
+                an additional ticket.
+              </small>
             </p>
           </div>
         ) : (

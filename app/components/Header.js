@@ -14,11 +14,9 @@ const HomeHeader = () => {
   const { constants } = useAppContext();
 
   const CONF_DATES_DISPLAY =
-    constants.Dates.CONF_DAY_ONE === constants.Dates.CONF_DAY_TWO
-      ? moment.utc(constants.Dates.CONF_DAY_ONE).format("MMMM D, YYYY")
-      : moment.utc(constants.Dates.CONF_DAY_ONE).format("MMMM D") +
-        "-" +
-        moment.utc(constants.Dates.CONF_DAY_TWO).format("D, YYYY");
+    moment.utc(constants.Dates.CONF_DAY_ONE).format("MMMM D") +
+    "-" +
+    moment.utc(constants.Dates.CONF_DAY_THREE).format("D, YYYY");
 
   const isOpportunityScholarshipAvailable = moment
     .utc()
@@ -158,10 +156,10 @@ const Navigation = ({ onMenuClick = () => {} }) => {
         </Link>
         <ul>
           <li>
-            <NavLink to="/speakers">Speakers</NavLink>
+            <NavLink to="/schedule">Schedule</NavLink>
           </li>
           <li>
-            <NavLink to="/schedule">Schedule</NavLink>
+            <NavLink to="/speakers">Speakers</NavLink>
           </li>
           <li>
             <NavLink to="/workshop">Workshop</NavLink>

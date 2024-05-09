@@ -187,6 +187,13 @@
       "title": "After Party",
       "description": "Join us for dinner and fun!"
     }
+  ],
+  "dayThree": [
+    {
+      "time": "9:00 am",
+      "title": "Workshop Day",
+      "description": "A day full of extra learning taught by world class instructors",
+      "speaker": ["housecor", "kentcdodds"]
+    }
   ]
 }
-
