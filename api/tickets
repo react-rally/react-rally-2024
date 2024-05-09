@@ -1,20 +1,32 @@
 [
   {
-    "name": "Early Bird - Round One",
+    "name": "React Rally Early Bird - Round One",
     "price": 400,
     "description": "Early bird tickets for React Rally! 20% off because we love early bird ticket buyers.",
     "soldOut": true
   },
   {
-    "name": "Early Bird - Round Two",
+    "name": "React Rally Early Bird - Round Two",
     "price": 450,
     "description": "One last chance to grab a React Rally ticket at a discounted price.",
     "soldOut": true
   },
   {
-    "name": "Standard",
+    "name": "React Rally Standard",
     "price": 500,
     "description": "The real deal. One ticket to React Rally.",
+    "soldOut": false
+  },
+  {
+    "name": "React Rally Day One",
+    "price": 250,
+    "description": "Not able to attend both days of React Rally, but don't want to miss out on the fun? Good news, you can have your cake and eat it too!",
+    "soldOut": false
+  },
+  {
+    "name": "React Rally Day Two",
+    "price": 250,
+    "description": "Not able to attend both days of React Rally, but don't want to miss out on the fun? Good news, you can have your cake and eat it too!",
     "soldOut": false
   },
   {
@@ -31,7 +43,7 @@
   },
   {
     "name": "Charitable Donation",
-    "price": "-",
+    "price": 25,
     "description": "All proceeds from this ticket will be donated to Black Girls Code. This won't grant you entrance to the conference, but it will help you feel good."
   }
 ]
