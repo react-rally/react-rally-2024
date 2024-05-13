@@ -1,6 +1,20 @@
 {
   "Premier": [],
   "Platinum": [],
-  "Gold": [],
-  "Silver": []
+  "Gold": [
+    {
+      "name": "Sentry",
+      "url": "https://sentry.io/",
+      "image": "assets/dist/img/sponsors/sentry.svg",
+      "style": { "width": "175px" }
+    }
+  ],
+  "Silver": [
+    {
+      "name": "Convex",
+      "url": "https://www.convex.dev/",
+      "image": "assets/dist/img/sponsors/convex.svg",
+      "style": { "width": "175px" }
+    }
+  ]
 }
