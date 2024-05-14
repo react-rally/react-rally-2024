@@ -15,8 +15,8 @@
     },
     {
       "time": "9:00 am",
-      "title": "TBA",
-      "description": "",
+      "title": "AI and Our Marriage",
+      "description": "Let's talk about building React apps with AI. AI is notoriously unreliable. Join Kap and Chris as they talk about important tactics when adding AI to your apps.",
       "speaker": ["kapehe_ok", "chris__sev"]
     },
     {
