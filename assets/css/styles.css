@@ -409,6 +409,11 @@ input[type="email"] {
   padding: 25px;
   margin-right: 50px;
 }
+.Venue__Details__Mapbox__Actions {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
 .Venue__Details__Mapbox .Button,
 .Venue__Details__Mapbox button {
   box-shadow: 0 3px 5px var(--color-grayLight);

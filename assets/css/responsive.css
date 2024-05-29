@@ -209,9 +209,12 @@
   .Content .Venue .Venue__Details .Venue__Details__Mapbox {
     margin-right: 0;
   }
+  .Content .Venue .Venue__Details .Venue__Details__Mapbox__Actions {
+    flex-direction: column;
+  }
   .Content .Venue .Venue__Details .Venue__Details__Mapbox button,
   .Content .Venue .Venue__Details .Venue__Details__Mapbox .Button {
-    margin-bottom: 15px;
+    text-align: center;
   }
   .Content .Venue .Venue__Details .Venue__Details__Mapbox img {
     width: 300px;

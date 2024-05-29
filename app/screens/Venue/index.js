@@ -10,11 +10,35 @@ export default () => {
   return (
     <div className="Venue">
       <section>
-        <h2>
-          {constants.Venue.Hotel.NAME}
-          <br />
-          <small>{constants.Venue.Hotel.ADDRESS}</small>
-        </h2>
+        <h2>{constants.Venue.Conference.NAME}</h2>
+        <div className="Venue__Details">
+          <div className="Venue__Details__Mapbox">
+            <a
+              href={constants.Links.CONFERENCE_DIRECTIONS}
+              aria-label="Map directions to venue."
+              target="_blank"
+            >
+              <img src="assets/dist/img/EcclesCenter.png" alt="" width="400" />
+            </a>
+            <div className="Venue__Details__Mapbox__Address">
+              <strong>{constants.Venue.Conference.NAME}</strong>
+              <small>{constants.Venue.Conference.ADDRESS}</small>
+            </div>
+            <div className="Venue__Details__Mapbox__Actions">
+              <Button href={constants.Links.VENUE_DIRECTIONS}>
+                Get Directions
+              </Button>
+            </div>
+          </div>
+          <div className="Venue__Details__Description">
+            <p>{constants.Venue.Conference.DESCRIPTION}</p>
+          </div>
+        </div>
+      </section>
+
+      {/*
+      <section>
+        <h2>{constants.Venue.Hotel.NAME}</h2>
         <div className="Venue__Details">
           <div className="Venue__Details__Mapbox">
             <a
@@ -28,16 +52,17 @@ export default () => {
               <strong>{constants.Venue.Hotel.NAME}</strong>
               <small>{constants.Venue.Hotel.ADDRESS}</small>
             </div>
-            <Button
-              href={constants.Links.HOTEL_RESERVATION}
-              className="primary"
-            >
-              Book a Room
-            </Button>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <Button href={constants.Links.VENUE_DIRECTIONS}>
-              Get Directions
-            </Button>
+            <div className="Venue__Details__Mapbox__Actions">
+              <Button
+                href={constants.Links.HOTEL_RESERVATION}
+                className="primary"
+              >
+                Book a Room
+              </Button>
+              <Button href={constants.Links.VENUE_DIRECTIONS}>
+                Get Directions
+              </Button>
+            </div>
           </div>
           <div className="Venue__Details__Description">
             <p>{constants.Venue.Hotel.DESCRIPTION}</p>
@@ -54,6 +79,7 @@ export default () => {
           </div>
         </div>
       </section>
+      */}
 
       {/*
       <section>
@@ -69,9 +95,11 @@ export default () => {
                 {constants.Venue.Party.ADDRESS}
               </small>
             </div>
-            <Button href={constants.Links.PARTY_DIRECTIONS}>
-              Get Directions
-            </Button>
+            <div className="Venue__Details__Mapbox__Actions">
+             <Button href={constants.Links.PARTY_DIRECTIONS}>
+                Get Directions
+              </Button>
+            </div>
           </div>
           <div className="Venue__Details__Description">
             <p>

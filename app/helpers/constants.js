@@ -16,6 +16,7 @@ constants.Links = {
   PROPOSAL_FORM: "https://sessionize.com/react-rally-2024",
   // HOTEL_RESERVATION:
   //   'https://www.marriott.com/event-reservations/reservation-link.mi?id=1675272098037&key=GRP&app=resvlink',
+  CONFERENCE_DIRECTIONS: "https://maps.app.goo.gl/cGxN11JhdhZRtLEq6",
   // VENUE_DIRECTIONS: 'https://goo.gl/maps/26iT97pXY2pZztis9',
   // PARTY_DIRECTIONS: 'https://goo.gl/maps/AeYKJrkAFZG2',
   LIVE_STREAM_PLACEHOLDER: "https://www.youtube.com/embed/5NNOrp_83RU",
@@ -30,6 +31,12 @@ constants.Links = {
 };
 
 constants.Venue = {};
+constants.Venue.Conference = {
+  NAME: "Eccles Center for the Performing Arts",
+  ADDRESS: "1750 Kearns Blvd, Park City, UT 84060",
+  DESCRIPTION:
+    "The Eccles Center is the largest theater in Park City, Utah. It hosts a broad range of world-class events including TEDxParkCity, as well as the anchor facility for the Sundance Film Festival.",
+};
 // constants.Venue.Hotel = {
 //   NAME: "Salt Lake Marriott Downtown at City Creek",
 //   ADDRESS: "75 S W Temple St, Salt Lake City, UT 84101",

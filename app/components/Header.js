@@ -164,11 +164,9 @@ const Navigation = ({ onMenuClick = () => {} }) => {
           <li>
             <NavLink to="/workshop">Workshop</NavLink>
           </li>
-          {/*
           <li>
             <NavLink to="/venue">Venue</NavLink>
           </li>
-          */}
           <li>
             <NavLink to="/sponsors">Sponsors</NavLink>
           </li>
