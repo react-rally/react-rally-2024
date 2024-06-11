@@ -26,13 +26,33 @@ export default () => {
           </p>
 
           <p>
-            In this session we'll explore 8 ways to handle state in React apps,
-            common state management mistakes, performance optimizations,
-            useEffect alternatives, key third-party libraries, TypeScript tips,
-            reusable component design patterns, devtools and extensions, file
-            structures, and novel React workflows. Bring your laptop, because
-            we'll implement many ideas together. This workshop encapsulates
-            hard-learned lessons from specializing in React for a full decade.
+          Are you comfortable with the React basics, and want to step up your game?
+          In this session, we’ll explore dozens of insights and hard lessons learned over the last 10 years.
+          </p>
+          
+          <p>
+            In this workshop, we’ll explore:
+          <ul>
+            <li>State management best-practices including eight ways to handle state and how to choose between them</li>
+            <li>Key third-party libraries</li>
+            <li>Reusable component best-practices</li>
+            <li>Creating custom devtools</li>
+            <li>Related browser extensions</li>
+            <li>TypeScript tips and best-practices</li>
+            <li>Performance optimizations</li>
+            <li>Automated testing tools, patterns, mocking approaches, and related accessibility fundamentals</li>
+            <li>Folder and file structure patterns</li>
+            <li>Novel React development workflows</li>
+            <li>Approaches for auditing your React codebase to establish opportunities for improvement</li>
+            <li>Common mistakes and anti-patterns and how to avoid them</li>
+            <li>New React features (as time allows)</li>
+            </ul>
+          </p>
+          <p>
+            This isn’t merely a lecture. Bring your laptop, because we'll implement these ideas together. This workshop encapsulates hard-learned lessons from working in React at dozens of companies for a full decade.
+          </p>
+          <p>
+           After this session, you’ll walk away with a long list of actionable tools, patterns, and practices for improving your team’s React apps.
           </p>
 
           <Person
