@@ -2,6 +2,7 @@ const constants = {};
 export default constants;
 
 constants.Meta = {
+  EVENT_LOCATION: "Park City, UT",
   EVENT_NAME: "React Rally",
   CONFERENCE_NAME: "React Rally",
   COMPANY_NAME: "React Utah, LLC",

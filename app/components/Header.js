@@ -46,6 +46,7 @@ const HomeHeader = () => {
           />
           <div className="Home__Header__Content">
             <h1>{constants.Meta.EVENT_NAME}</h1>
+            <h2>{constants.Meta.EVENT_LOCATION}</h2>
             <h2>{CONF_DATES_DISPLAY}</h2>
             <p>
               React Rally is a community conference about React and topics
