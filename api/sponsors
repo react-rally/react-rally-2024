@@ -7,6 +7,12 @@
       "url": "https://sentry.io/",
       "image": "assets/dist/img/sponsors/sentry.svg",
       "style": { "width": "175px" }
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare.com",
+      "image": "assets/dist/img/sponsors/cloudflare.png",
+      "style": { "width": "175px" }
     }
   ],
   "Silver": [
