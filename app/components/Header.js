@@ -27,7 +27,7 @@ const HomeHeader = () => {
   const isConferenceLive = moment
     .utc()
     .isSameOrAfter(moment.utc(constants.Dates.CONF_DAY_ONE));
-  const isHotelAvailable = false; //!isConferenceLive;
+  const isHotelAvailable = !isConferenceLive;
   const isCFPOpen = moment
     .utc()
     .isBetween(
@@ -47,7 +47,7 @@ const HomeHeader = () => {
           <div className="Home__Header__Content">
             <h1>{constants.Meta.EVENT_NAME}</h1>
             <h2>{constants.Meta.EVENT_LOCATION}</h2>
-            <h2>{CONF_DATES_DISPLAY}</h2>
+            <h3>{CONF_DATES_DISPLAY}</h3>
             <p>
               React Rally is a community conference about React and topics
               interesting to React developers. We focus on a friendly, welcoming

@@ -15,10 +15,9 @@ constants.Links = {
   EMAIL_ORGANIZERS: "info@reactrally.com",
   TICKET_SALES: "https://ti.to/react-rally/react-rally-2024",
   PROPOSAL_FORM: "https://sessionize.com/react-rally-2024",
-  // HOTEL_RESERVATION:
-  //   'https://www.marriott.com/event-reservations/reservation-link.mi?id=1675272098037&key=GRP&app=resvlink',
+  HOTEL_RESERVATION: "https://group.doubletree.com/htsh3u",
   CONFERENCE_DIRECTIONS: "https://maps.app.goo.gl/cGxN11JhdhZRtLEq6",
-  // VENUE_DIRECTIONS: 'https://goo.gl/maps/26iT97pXY2pZztis9',
+  HOTEL_DIRECTIONS: "https://maps.app.goo.gl/cxJfSK6TeMdd3mdZ8",
   // PARTY_DIRECTIONS: 'https://goo.gl/maps/AeYKJrkAFZG2',
   LIVE_STREAM_PLACEHOLDER: "https://www.youtube.com/embed/5NNOrp_83RU",
   LIVE_STREAM_DAY_ONE: "https://www.youtube.com/embed/ispz-5cwNW0",
@@ -36,13 +35,13 @@ constants.Venue.Conference = {
   NAME: "Eccles Center for the Performing Arts",
   ADDRESS: "1750 Kearns Blvd, Park City, UT 84060",
   DESCRIPTION:
-    "The Eccles Center is the largest theater in Park City, Utah. It hosts a broad range of world-class events including TEDxParkCity, as well as the anchor facility for the Sundance Film Festival.",
+    "Our venue is The Eccles Center, the largest theater in Park City, Utah. It hosts a broad range of world-class events including TEDxParkCity, as well as the anchor facility for the Sundance Film Festival.",
 };
-// constants.Venue.Hotel = {
-//   NAME: "Salt Lake Marriott Downtown at City Creek",
-//   ADDRESS: "75 S W Temple St, Salt Lake City, UT 84101",
-//   DESCRIPTION: "Salt Lake Marriot is a world class hotel located in the heart of the downtown business and entertainment district."
-// };
+constants.Venue.Hotel = {
+  NAME: "DoubleTree by Hilton Hotel Park City - The Yarrow",
+  ADDRESS: "1800 Park Avenue Park City, UT 84060",
+  DESCRIPTION: "",
+};
 // constants.Venue.Party = {
 //   NAME: "The Gateway",
 //   ADDRESS: "10 North Rio Grande Street, Salt Lake City, UT, 84101",
@@ -50,7 +49,7 @@ constants.Venue.Conference = {
 // };
 
 constants.Prices = {
-  // HOTEL_RATE: 189,
+  HOTEL_RATE: 144,
 };
 
 constants.Dates = {
@@ -60,7 +59,7 @@ constants.Dates = {
   CONF_DAY_ONE: "2024-08-12T06:00:00-00:00",
   CONF_DAY_TWO: "2024-08-13T06:00:00-00:00",
   CONF_DAY_THREE: "2024-08-14T06:00:00-00:00",
-  HOTEL_DISCOUNT: "2024-07-25T06:00:00-00:00",
+  HOTEL_DISCOUNT: "2024-07-21T06:00:00-00:00",
   // OPPORTUNITY_SCHOLARSHIP_OPEN: '2024-01-01T06:00:00-00:00',
   // OPPORTUNITY_SCHOLARSHIP_CLOSE: '2024-01-01T06:00:00-00:00',
 };

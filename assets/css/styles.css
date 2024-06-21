@@ -279,9 +279,11 @@ input[type="email"] {
   z-index: 100;
 }
 .Home__Header__Content h1,
-.Home__Header__Content h2 {
+.Home__Header__Content h2,
+.Home__Header__Content h3 {
   border: 0 none;
   color: var(--color-white);
+  padding: 0;
 }
 .Home__Header .Button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

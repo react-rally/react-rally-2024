@@ -25,7 +25,7 @@ export default () => {
               <small>{constants.Venue.Conference.ADDRESS}</small>
             </div>
             <div className="Venue__Details__Mapbox__Actions">
-              <Button href={constants.Links.VENUE_DIRECTIONS}>
+              <Button href={constants.Links.CONFERENCE_DIRECTIONS}>
                 Get Directions
               </Button>
             </div>
@@ -36,17 +36,16 @@ export default () => {
         </div>
       </section>
 
-      {/*
       <section>
         <h2>{constants.Venue.Hotel.NAME}</h2>
         <div className="Venue__Details">
           <div className="Venue__Details__Mapbox">
             <a
-              href={constants.Links.VENUE_DIRECTIONS}
-              aria-label="Map directions to venue."
+              href={constants.Links.HOTEL_DIRECTIONS}
+              aria-label="Map directions to hotel."
               target="_blank"
             >
-              <img src="assets/dist/img/Marriott_Map.png" alt="" width="400" />
+              <img src="assets/dist/img/DoubleTree.png" alt="" width="400" />
             </a>
             <div className="Venue__Details__Mapbox__Address">
               <strong>{constants.Venue.Hotel.NAME}</strong>
@@ -59,7 +58,7 @@ export default () => {
               >
                 Book a Room
               </Button>
-              <Button href={constants.Links.VENUE_DIRECTIONS}>
+              <Button href={constants.Links.HOTEL_DIRECTIONS}>
                 Get Directions
               </Button>
             </div>
@@ -67,19 +66,20 @@ export default () => {
           <div className="Venue__Details__Description">
             <p>{constants.Venue.Hotel.DESCRIPTION}</p>
             <p>
+              Need a place to stay while you're at {constants.Meta.EVENT_NAME}?
               We have arranged a group discount with{" "}
-              {constants.Venue.Hotel.NAME} for attendees of{" "}
-              {constants.Meta.EVENT_NAME}. Rooms are available for $
-              {constants.Prices.HOTEL_RATE} per night. This discounted rate is
-              only available until{" "}
-              {moment.utc(constants.Dates.HOTEL_DISCOUNT).format("MMMM Do")} and
-              there are a limited number of rooms available, so book your room
-              early.
+              {constants.Venue.Hotel.NAME} our attendees. Rooms are available
+              for <b>${constants.Prices.HOTEL_RATE}</b> per night. This
+              discounted rate is only available until{" "}
+              <b>
+                {moment.utc(constants.Dates.HOTEL_DISCOUNT).format("MMMM Do")}
+              </b>{" "}
+              and there are a limited number of rooms available, so book your
+              room early.
             </p>
           </div>
         </div>
       </section>
-      */}
 
       {/*
       <section>
