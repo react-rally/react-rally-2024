@@ -560,6 +560,7 @@ input[type="email"] {
 .Header__Home {
   background: url(../dist/img/TimpanogosHeader.png) no-repeat center -100px scroll;
   background-size: cover;
+  background-color: rgb(14, 136, 149);
 }
 .Header__Home .Header__Nav ul {
   margin-left: 0;
