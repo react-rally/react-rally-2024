@@ -49,6 +49,7 @@
     "title": "Software Developer and Educator",
     "twitter": "kentcdodds",
     "github": "kentcdodds",
+    "featured": true,
     "avatar": "assets/img/speakers/kentcdodds.jpg"
   },
   "housecor": {
