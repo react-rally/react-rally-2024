@@ -1,5 +1,21 @@
-var webpack = require("webpack");
-var plugins = [];
+const path = require("path");
+const webpack = require("webpack");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+
+const plugins = [
+  new HtmlWebpackPlugin({
+    filename: "index.html",
+    template: "index.html",
+  }),
+  new CopyWebpackPlugin({
+    patterns: [
+      { from: "assets/img", to: "assets/img" },
+      { from: "docs", to: "docs" },
+    ],
+  }),
+];
 
 if (process.env.NODE_ENV === "production") {
   plugins.push(
@@ -9,40 +25,45 @@ if (process.env.NODE_ENV === "production") {
       },
     }),
   );
-  plugins.push(new webpack.optimize.UglifyJsPlugin());
 }
 
 module.exports = {
-  entry: "./index.js",
+  entry: ["./index.js"],
   output: {
     filename: "bundle.js",
   },
+  mode: process.env.NODE_ENV ?? "production",
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel",
-        query: {
-          presets: ["es2015", "react"],
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"],
+          },
         },
       },
       {
         test: /\.png$/,
-        loader: "file",
+        use: "file-loader",
       },
       {
         test: /\.css$/,
-        loaders: ["style", "css"],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\/api\//,
-        loader: "json-loader",
+        use: "json-loader",
       },
     ],
   },
+  optimization: {
+    minimizer: [new UglifyJsPlugin()],
+  },
   resolve: {
-    modulesDirectories: ["app", "node_modules"],
+    modules: ["app", "node_modules"],
   },
   devServer: {
     historyApiFallback: true,

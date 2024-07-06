@@ -1,7 +1,11 @@
-import React, { Component, useMemo } from "react";
-import PropTypes from "prop-types";
+import React, { Component, useMemo, useState } from "react";
 import cx from "classnames";
-import { Link } from "react-router";
+import {
+  Link,
+  NavLink as _NavLink,
+  useLocation,
+  useMatch,
+} from "react-router-dom";
 import moment from "moment";
 import DateUtils from "helpers/DateUtils";
 import Button from "components/Button";
@@ -40,7 +44,7 @@ const HomeHeader = () => {
       <div className="Home__Header__Wrapper">
         <div className="Home__Header__Wrapper__Content">
           <img
-            src="assets/dist/img/ReactLogo.svg"
+            src="assets/img/ReactLogo.svg"
             alt="React Rally logo"
             className="Home__Header__Logo"
           />
@@ -127,13 +131,13 @@ const Navigation = ({ onMenuClick = () => {} }) => {
     () =>
       ({ children, to }) => {
         return (
-          <Link
-            activeClassName="active"
+          <_NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
             to={to}
             onClick={() => onMenuClick(false)}
           >
             {children}
-          </Link>
+          </_NavLink>
         );
       },
     [onMenuClick],
@@ -149,7 +153,7 @@ const Navigation = ({ onMenuClick = () => {} }) => {
           onClick={() => onMenuClick(false)}
         >
           <img
-            src="assets/dist/img/ReactLogo.svg"
+            src="assets/img/ReactLogo.svg"
             alt="React logo."
             width="44"
             height="44"
@@ -199,40 +203,23 @@ const Navigation = ({ onMenuClick = () => {} }) => {
   );
 };
 
-export default class Header extends Component {
-  constructor(props) {
-    super(props);
+export default () => {
+  const isHomeScreen = useMatch("/");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    this.state = {
-      isMenuOpen: false,
-    };
-  }
-
-  render() {
-    const isHomeScreen = this.context.router.isActive("/", true);
-    const { isMenuOpen } = this.state;
-
-    return (
-      <header
-        className={cx("Header", {
-          Header__Home: isHomeScreen,
-          "Header--menuOpen": isMenuOpen,
-        })}
-      >
-        <Navigation
-          onMenuClick={(isOpen) => {
-            if (typeof isOpen === "undefined") {
-              isOpen = !isMenuOpen;
-            }
-            this.setState({ isMenuOpen: isOpen });
-          }}
-        />
-        {isHomeScreen && <HomeHeader />}
-      </header>
-    );
-  }
-}
-
-Header.contextTypes = {
-  router: PropTypes.object,
+  return (
+    <header
+      className={cx("Header", {
+        Header__Home: isHomeScreen,
+        "Header--menuOpen": isMenuOpen,
+      })}
+    >
+      <Navigation
+        onMenuClick={(isOpen) => {
+          setIsMenuOpen(isOpen ?? !isMenuOpen);
+        }}
+      />
+      {isHomeScreen && <HomeHeader />}
+    </header>
+  );
 };

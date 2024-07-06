@@ -1,7 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, browserHistory } from "react-router";
-import App from "App";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+import { AppProvider } from "App";
+import Layout from "Layout";
 import About from "screens/About";
 import Conduct from "screens/Conduct";
 import Home from "screens/Home";
@@ -19,7 +25,7 @@ import "./assets/css/responsive.css";
 const NotFound = () => {
   return (
     <div className="NotFound">
-      <img src="assets/dist/img/icons/t-rex.svg" />
+      <img src="assets/img/icons/t-rex.svg" />
       <h1>Sorry, you're looking for something that no longer exists.</h1>
       <section className="highlight">
         <p>
@@ -50,26 +56,31 @@ const NotFound = () => {
   }
 })();
 
-ReactDOM.render(
-  <Router
-    history={browserHistory}
-    onUpdate={() => {
-      window.scrollTo(0, 0);
-    }}
-  >
-    <Route path="/" component={App}>
-      <IndexRoute component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/conduct" component={Conduct} />
-      <Route path="/privacy" component={Privacy} />
-      <Route path="/schedule" component={Schedule} />
-      <Route path="/speakers" component={Speakers} />
-      <Route path="/sponsors" component={Sponsors} />
-      <Route path="/stream" component={Stream} />
-      <Route path="/venue" component={Venue} />
-      <Route path="/workshop" component={Workshop} />
-      <Route path="*" component={NotFound} />
-    </Route>
-  </Router>,
-  document.getElementById("container"),
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/conduct" element={<Conduct />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/schedule" element={<Schedule />} />
+      <Route path="/speakers" element={<Speakers />} />
+      <Route path="/sponsors" element={<Sponsors />} />
+      <Route path="/stream" element={<Stream />} />
+      <Route path="/venue" element={<Venue />} />
+      <Route path="/workshop" element={<Workshop />} />
+      <Route path="*" element={<NotFound />} />
+    </Route>,
+  ),
+);
+
+createRoot(document.getElementById("container")).render(
+  <AppProvider>
+    <RouterProvider
+      router={router}
+      onUpdate={() => {
+        window.scrollTo(0, 0);
+      }}
+    />
+  </AppProvider>,
 );

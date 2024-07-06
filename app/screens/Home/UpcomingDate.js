@@ -5,7 +5,7 @@ import cx from "classnames";
 export default ({ timestamp, description }) => {
   const date = moment.utc(timestamp);
   const isAfter = moment.utc().isAfter(date);
-  const iconSource = `assets/dist/img/icons/calendar${
+  const iconSource = `assets/img/icons/calendar${
     isAfter ? "-complete" : ""
   }.svg`;
 

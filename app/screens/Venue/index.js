@@ -18,7 +18,7 @@ export default () => {
               aria-label="Map directions to venue."
               target="_blank"
             >
-              <img src="assets/dist/img/EcclesCenter.png" alt="" width="400" />
+              <img src="assets/img/EcclesCenter.png" alt="" width="400" />
             </a>
             <div className="Venue__Details__Mapbox__Address">
               <strong>{constants.Venue.Conference.NAME}</strong>
@@ -45,7 +45,7 @@ export default () => {
               aria-label="Map directions to hotel."
               target="_blank"
             >
-              <img src="assets/dist/img/DoubleTree.png" alt="" width="400" />
+              <img src="assets/img/DoubleTree.png" alt="" width="400" />
             </a>
             <div className="Venue__Details__Mapbox__Address">
               <strong>{constants.Venue.Hotel.NAME}</strong>
@@ -87,7 +87,7 @@ export default () => {
         <div className="Venue__Details">
           <div className="Venue__Details__Mapbox">
             <a href={constants.Links.PARTY_DIRECTIONS} aria-label="Map directions to after party." target="_blank">
-              <img src="assets/dist/img/Gateway_Map.png" alt="" width="400" />
+              <img src="assets/img/Gateway_Map.png" alt="" width="400" />
             </a>
             <div className="Venue__Details__Mapbox__Address">
               <strong>{constants.Venue.Party.NAME}</strong>

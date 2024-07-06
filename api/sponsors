@@ -5,13 +5,13 @@
     {
       "name": "Sentry",
       "url": "https://sentry.io/",
-      "image": "assets/dist/img/sponsors/sentry.svg",
+      "image": "assets/img/sponsors/sentry.svg",
       "style": { "width": "175px" }
     },
     {
       "name": "Cloudflare",
       "url": "https://www.cloudflare.com/developer-platform/products/",
-      "image": "assets/dist/img/sponsors/cloudflare.png",
+      "image": "assets/img/sponsors/cloudflare.png",
       "style": { "width": "175px" }
     }
   ],
@@ -19,7 +19,7 @@
     {
       "name": "Convex",
       "url": "https://www.convex.dev/",
-      "image": "assets/dist/img/sponsors/convex.svg",
+      "image": "assets/img/sponsors/convex.svg",
       "style": { "width": "175px" }
     }
   ]

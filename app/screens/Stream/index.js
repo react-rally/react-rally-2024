@@ -17,7 +17,7 @@ export default () => {
         allowFullScreen
       />
       <div className="Stream__Caption">
-        <img src="assets/dist/img/ReactLogoRed.svg" width="42" />
+        <img src="assets/img/ReactLogoRed.svg" width="42" />
         <h2>{constants.Meta.CONFERENCE_NAME} Live Stream</h2>
       </div>
       <section className="highlight">

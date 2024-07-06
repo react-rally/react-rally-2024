@@ -558,7 +558,7 @@ input[type="email"] {
   background-color: var(--color-teal);
 }
 .Header__Home {
-  background: url(../dist/img/TimpanogosHeader.png) no-repeat center -100px scroll;
+  background: url(/assets/img/TimpanogosHeader.png) no-repeat center -100px scroll;
   background-size: cover;
   background-color: rgb(14, 136, 149);
 }

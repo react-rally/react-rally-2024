@@ -5,7 +5,7 @@
     "twitter": "shrutikapoor08",
     "github": "shrutikapoor08",
     "featured": true,
-    "avatar": "assets/dist/img/speakers/shrutikapoor08.jpg"
+    "avatar": "assets/img/speakers/shrutikapoor08.jpg"
   },
   "kapehe_ok": {
     "name": "Kapehe",
@@ -13,7 +13,7 @@
     "twitter": "kapehe_ok",
     "github": "kapehe-ok",
     "featured": true,
-    "avatar": "assets/dist/img/speakers/kapehe_ok.jpg"
+    "avatar": "assets/img/speakers/kapehe_ok.jpg"
   },
   "chris__sev": {
     "name": "Chris Sev",
@@ -21,139 +21,139 @@
     "twitter": "chris__sev",
     "github": "chris-sev",
     "featured": true,
-    "avatar": "assets/dist/img/speakers/chris__sev.jpg"
+    "avatar": "assets/img/speakers/chris__sev.jpg"
   },
   "tejaskumar_": {
     "name": "Tejas Kumar",
     "title": "Emcee",
     "twitter": "tejaskumar_",
     "github": "",
-    "avatar": "assets/dist/img/speakers/tejaskumar_.jpg"
+    "avatar": "assets/img/speakers/tejaskumar_.jpg"
   },
   "danieljcafonso": {
     "name": "Daniel Afonso",
     "title": "Developer Advocate at OLX",
     "twitter": "danieljcafonso",
     "github": "",
-    "avatar": "assets/dist/img/speakers/danieljcafonso.jpg"
+    "avatar": "assets/img/speakers/danieljcafonso.jpg"
   },
   "jhooks": {
     "name": "Joel Hooks",
     "title": "building Badass Courses",
     "twitter": "jhooks",
     "github": "",
-    "avatar": "assets/dist/img/speakers/jhooks.jpg"
+    "avatar": "assets/img/speakers/jhooks.jpg"
   },
   "kentcdodds": {
     "name": "Kent C. Dodds",
     "title": "Software Developer and Educator",
     "twitter": "kentcdodds",
     "github": "kentcdodds",
-    "avatar": "assets/dist/img/speakers/kentcdodds.jpg"
+    "avatar": "assets/img/speakers/kentcdodds.jpg"
   },
   "housecor": {
     "name": "Cory House",
     "title": "Author / Consultant",
     "twitter": "housecor",
     "github": "coryhouse",
-    "avatar": "assets/dist/img/speakers/housecor.jpg"
+    "avatar": "assets/img/speakers/housecor.jpg"
   },
   "Chad_R_Stewart": {
     "name": "Chad Stewart",
     "title": "Founder of TechIsHiring",
     "twitter": "Chad_R_Stewart",
     "github": "",
-    "avatar": "assets/dist/img/speakers/Chad_R_Stewart.jpg"
+    "avatar": "assets/img/speakers/Chad_R_Stewart.jpg"
   },
   "kulkarniankita9": {
     "name": "Ankita Kulkarni",
     "title": "Educator",
     "twitter": "kulkarniankita9",
     "github": "",
-    "avatar": "assets/dist/img/speakers/kulkarniankita9.jpg"
+    "avatar": "assets/img/speakers/kulkarniankita9.jpg"
   },
   "frankvisaggio": {
     "name": "Frank Visaggio",
     "title": "General Atomics, Software engineering manager - frontend platform team",
     "twitter": "frankvisaggio",
     "github": "",
-    "avatar": "assets/dist/img/speakers/frankvisaggio.jpg"
+    "avatar": "assets/img/speakers/frankvisaggio.jpg"
   },
   "alexadark": {
     "name": "Alexandra Spalato",
     "title": "Developer Relation Engineer at Storyblok",
     "twitter": "alexadark",
     "github": "",
-    "avatar": "assets/dist/img/speakers/alexadark.jpg"
+    "avatar": "assets/img/speakers/alexadark.jpg"
   },
   "iamtylerwclark": {
     "name": "Tyler Clark",
     "title": "Principal Software Engineer",
     "twitter": "iamtylerwclark",
     "github": "",
-    "avatar": "assets/dist/img/speakers/iamtylerwclark.jpg"
+    "avatar": "assets/img/speakers/iamtylerwclark.jpg"
   },
   "devagrawal09": {
     "name": "Dev Agrawal",
     "title": "Fullstack Developer, Content Creator",
     "twitter": "devagrawal09",
     "github": "",
-    "avatar": "assets/dist/img/speakers/devagrawal09.jpg"
+    "avatar": "assets/img/speakers/devagrawal09.jpg"
   },
   "aakansha1216": {
     "name": "Aakansha Doshi",
     "title": "Open-source developer",
     "twitter": "aakansha1216",
     "github": "",
-    "avatar": "assets/dist/img/speakers/aakansha1216.jpg"
+    "avatar": "assets/img/speakers/aakansha1216.jpg"
   },
   "c_yatteau": {
     "name": "Courtney Yatteau",
     "title": "Developer Advocate at Esri",
     "twitter": "c_yatteau",
     "github": "",
-    "avatar": "assets/dist/img/speakers/c_yatteau.jpg"
+    "avatar": "assets/img/speakers/c_yatteau.jpg"
   },
   "crutchcorn": {
     "name": "Corbin Crutchley",
     "title": "Staff Frontend Engineer",
     "twitter": "crutchcorn",
     "github": "",
-    "avatar": "assets/dist/img/speakers/crutchcorn.jpg"
+    "avatar": "assets/img/speakers/crutchcorn.jpg"
   },
   "neciudan": {
     "name": "Dan Neciu",
     "title": "Software Engineer & Tech Founder @ CareerOS",
     "twitter": "neciudan",
     "github": "",
-    "avatar": "assets/dist/img/speakers/neciudan.jpg"
+    "avatar": "assets/img/speakers/neciudan.jpg"
   },
   "Renaldig": {
     "name": "Renaldi Gondosubroto",
     "title": "Software Engineer at Seek Limited",
     "twitter": "Renaldig",
     "github": "",
-    "avatar": "assets/dist/img/speakers/Renaldig.jpg"
+    "avatar": "assets/img/speakers/Renaldig.jpg"
   },
   "rebekahcallari": {
     "name": "Rebekah Callari-Kaczmarczyk",
     "title": "Software Engineer II at the Philadelphia Phillies",
     "twitter": "rebekahcallari",
     "github": "",
-    "avatar": "assets/dist/img/speakers/rebekahcallari.jpg"
+    "avatar": "assets/img/speakers/rebekahcallari.jpg"
   },
   "TheSonOfThomp": {
     "name": "Adam Thompson",
     "title": "Sr. UI Engineer for Design Systems at MongoDB",
     "twitter": "TheSonOfThomp",
     "github": "",
-    "avatar": "assets/dist/img/speakers/TheSonOfThomp.jpg"
+    "avatar": "assets/img/speakers/TheSonOfThomp.jpg"
   },
   "aileenvl": {
     "name": "Aileen Villanueva Lecuona",
     "title": "Senior Engineer",
     "twitter": "aileenvl",
     "github": "",
-    "avatar": "assets/dist/img/speakers/aileenvl.jpg"
+    "avatar": "assets/img/speakers/aileenvl.jpg"
   }
 }
