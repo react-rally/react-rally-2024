@@ -13,6 +13,7 @@ const plugins = [
     patterns: [
       { from: "assets/img", to: "assets/img" },
       { from: "docs", to: "docs" },
+      { from: "_redirects" },
     ],
   }),
 ];
