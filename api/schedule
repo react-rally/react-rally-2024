@@ -181,11 +181,6 @@
       "title": "And Now You Understand React Server Components",
       "description": "You want to keep up with the future of React. React has evolved over the years and continues to push the component model further and further. Out of all the evolutions of React, server components are certainly the biggest advancement. It expands the component model further than ever before and as a result, requires some rethinking. Seasoned React developers need to unlearn the way we used to do things to be able to understand the improvements that React Server Components offer.\n\nIn this talk, Kent will guide you through React Server Components start to finish so you can understand how React Server Components work and set you off on your journey into the future of components everywhere!",
       "speaker": "kentcdodds"
-    },
-    {
-      "time": "6:00 pm",
-      "title": "After Party",
-      "description": "Join us for dinner and fun!"
     }
   ],
   "dayThree": [
