@@ -21,6 +21,12 @@
       "url": "https://convex.dev/c/reactrally",
       "image": "assets/img/sponsors/convex.svg",
       "style": { "width": "175px" }
+    },
+    {
+      "name": "This Week in React",
+      "url": "https://thisweekinreact.com/?utm_source=reactrally",
+      "image": "assets/img/sponsors/thisweekinreact.png",
+      "style": { "width": "175px" }
     }
   ]
 }
