@@ -31,7 +31,9 @@ const HomeHeader = () => {
   const isConferenceLive = moment
     .utc()
     .isSameOrAfter(moment.utc(constants.Dates.CONF_DAY_ONE));
-  const isHotelAvailable = !isConferenceLive;
+  const isHotelAvailable =
+    !isConferenceLive &&
+    moment.utc().isBefore(moment.utc(constants.Dates.HOTEL_DISCOUNT));
   const isCFPOpen = moment
     .utc()
     .isBetween(
