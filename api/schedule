@@ -31,24 +31,18 @@
     },
     {
       "time": "10:30 am",
-      "title": "Deep Dive into the CodeLand Of Javascript Generators 🚀",
-      "description": "In this talk I will dive deep into the world of Javascript Generators - how they work and how to use them to write better clean, memory-efficient, and maintainable code.",
-      "speaker": "aakansha1216"
-    },
-    {
-      "time": "11:00 am",
       "title": "TypeScript, the hard way",
       "description": "Is it possible to build a type-safe React component that can be rendered as any other component? We'll dive into lesser-used, but powerful TypeScript features while building a polymorphic react component.",
       "speaker": "TheSonOfThomp"
     },
     {
-      "time": "11:30 am",
+      "time": "11:00 am",
       "title": "React 19 for the Rest of Us",
       "description": "React 19 introduces a lot of stuff, including server-side behaviors like cache, server form actions, and more. How's a newcomer expected to learn all of this? In this talk!",
       "speaker": "crutchcorn"
     },
     {
-      "time": "12:00 pm",
+      "time": "11:30 pm",
       "title": "Lunch"
     },
     {
