@@ -27,7 +27,7 @@
       "url": "https://www.flightcontrol.dev/",
       "image": "assets/img/sponsors/flightControl.png",
       "style": { "width": "175px" }
-    }
+    },
     {
       "name": "This Week in React",
       "url": "https://thisweekinreact.com/?utm_source=reactrally",
