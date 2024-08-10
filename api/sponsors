@@ -1,5 +1,12 @@
 {
-  "Premier": [],
+  "Premier": [
+    {
+      "name": "Vercel",
+      "url": "http://vercel.com/",
+      "image": "assets/img/sponsors/vercel.svg",
+      "style": { "width": "350px" }
+    }
+  ],
   "Platinum": [],
   "Gold": [
     {
@@ -13,6 +20,12 @@
       "url": "https://www.cloudflare.com/developer-platform/products/",
       "image": "assets/img/sponsors/cloudflare.png",
       "style": { "width": "175px" }
+    },
+    {
+      "name": "Remi",
+      "url": "https://jobs.remihq.com/",
+      "image": "assets/img/sponsors/remi.svg",
+      "style": { "width": "100px" }
     }
   ],
   "Silver": [
@@ -20,6 +33,12 @@
       "name": "Convex",
       "url": "https://convex.dev/c/reactrally",
       "image": "assets/img/sponsors/convex.svg",
+      "style": { "width": "175px" }
+    },
+    {
+      "name": "TanStack",
+      "url": "https://tanstack.com/",
+      "image": "assets/img/sponsors/tanstack.png",
       "style": { "width": "175px" }
     },
     {
