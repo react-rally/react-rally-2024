@@ -13,13 +13,13 @@
       "name": "Sentry",
       "url": "https://sentry.io/",
       "image": "assets/img/sponsors/sentry.svg",
-      "style": { "width": "175px" }
+      "style": { "width": "225px" }
     },
     {
       "name": "Cloudflare",
       "url": "https://www.cloudflare.com/developer-platform/products/",
       "image": "assets/img/sponsors/cloudflare.png",
-      "style": { "width": "175px" }
+      "style": { "width": "225px" }
     },
     {
       "name": "Remi",
