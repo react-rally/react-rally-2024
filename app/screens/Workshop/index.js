@@ -17,6 +17,13 @@ export default () => {
 
       <div className="Workshop__Sessions">
         <section className="Workshop__Sessions__Item">
+          <Person
+            name="Cory House"
+            avatar="assets/img/speakers/housecor.jpg"
+            twitter="housecor"
+            github="coryhouse"
+          />
+
           <h2>Advanced React: Lessons from 10 Years</h2>
 
           <p>
@@ -68,16 +75,16 @@ export default () => {
             After this session, you’ll walk away with a long list of actionable
             tools, patterns, and practices for improving your team’s React apps.
           </p>
-
-          <Person
-            name="Cory House"
-            avatar="assets/img/speakers/housecor.jpg"
-            twitter="housecor"
-            github="coryhouse"
-          />
         </section>
 
         <section className="Workshop__Sessions__Item">
+          <Person
+            name="Kent C. Dodds"
+            avatar="assets/img/speakers/kentcdodds.jpg"
+            twitter="kentcdodds"
+            github="kentcdodds"
+          />
+
           <h2>React Server Components and Actions</h2>
 
           <p>
@@ -127,13 +134,6 @@ export default () => {
               <li>Providing great loading UX with optimistic UI</li>{" "}
             </ul>
           </p>
-
-          <Person
-            name="Kent C. Dodds"
-            avatar="assets/img/speakers/kentcdodds.jpg"
-            twitter="kentcdodds"
-            github="kentcdodds"
-          />
         </section>
       </div>
     </div>
