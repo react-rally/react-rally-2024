@@ -20,8 +20,8 @@ constants.Links = {
   HOTEL_DIRECTIONS: "https://maps.app.goo.gl/cxJfSK6TeMdd3mdZ8",
   // PARTY_DIRECTIONS: 'https://goo.gl/maps/AeYKJrkAFZG2',
   LIVE_STREAM_PLACEHOLDER: "https://www.youtube.com/embed/5NNOrp_83RU",
-  LIVE_STREAM_DAY_ONE: "https://www.youtube.com/embed/ispz-5cwNW0",
-  LIVE_STREAM_DAY_TWO: "https://www.youtube.com/embed/pxCs9IAhciE",
+  LIVE_STREAM_DAY_ONE: "https://www.youtube.com/embed/DGG6xpllTiE",
+  LIVE_STREAM_DAY_TWO: "https://www.youtube.com/embed/M0lv_9u5Qi8",
   LIVE_STREAM_OVER: "https://www.youtube.com/embed/T1XgFsitnQw",
   YOUTUBE_CHANNEL:
     "https://www.youtube.com/playlist?list=PLUD4kD-wL_zYSfU3tIYsb4WqfFQzO_EjQ",
