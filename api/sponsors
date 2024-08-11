@@ -42,6 +42,12 @@
       "style": { "width": "175px" }
     },
     {
+      "name": "Epic Web",
+      "url": "https://www.epicweb.dev/",
+      "image": "assets/img/sponsors/epicweb.svg",
+      "style": { "width": "175px" }
+    },
+    {
       "name": "Flight Control",
       "url": "https://www.flightcontrol.dev/",
       "image": "assets/img/sponsors/flightControl.png",
