@@ -15,6 +15,12 @@
     "name": "React Rally Standard",
     "price": 500,
     "description": "The real deal. One ticket to React Rally.",
+    "soldOut": true
+  },
+  {
+    "name": "React Rally Late Bird",
+    "price": 500,
+    "description": "The real deal. One ticket to React Rally. Swag is not guaranteed.",
     "soldOut": false
   },
   {
