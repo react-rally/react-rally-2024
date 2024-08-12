@@ -146,6 +146,7 @@ export default class extends React.Component {
       <menu className="Schedule__Menu">
         {Object.keys(CONF_DAYS).map((k) => (
           <a
+            key={k}
             href="javascript://"
             onClick={this.handleMenuItemClick.bind(this, k)}
             className={cx("Schedule__Menu__Item", {
