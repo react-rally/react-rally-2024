@@ -88,6 +88,11 @@
       "time": "6:00 pm",
       "title": "Dinner 🍣",
       "description": "Grab a bite to eat with friends. This is self pay and restaurant suggestions will be provided."
+    },
+    {
+      "time": "8:00 pm",
+      "title": "React Rally Hangout 👾",
+      "description": "Board games at the hotel, bar crawl on Main Street, find some friends and have some fun!"
     }
   ],
   "dayTwo": [
