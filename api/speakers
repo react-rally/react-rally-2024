@@ -82,7 +82,7 @@
   },
   "alexadark": {
     "name": "Alexandra Spalato",
-    "title": "Developer Relation Engineer at Storyblok",
+    "title": "Independent AI Expert: Bridging Technology and Design for Businesses",
     "twitter": "alexadark",
     "github": "",
     "avatar": "assets/img/speakers/alexadark.jpg"
@@ -100,6 +100,13 @@
     "twitter": "devagrawal09",
     "github": "",
     "avatar": "assets/img/speakers/devagrawal09.jpg"
+  },
+  "aakansha1216": {
+    "name": "Aakansha Doshi",
+    "title": "Open-source developer",
+    "twitter": "aakansha1216",
+    "github": "",
+    "avatar": "assets/img/speakers/aakansha1216.jpg"
   },
   "c_yatteau": {
     "name": "Courtney Yatteau",
