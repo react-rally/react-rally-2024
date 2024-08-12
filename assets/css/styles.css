@@ -719,6 +719,10 @@ section.Footer__Tickets h2 {
   position: relative;
   width: 225px;
 }
+.Person__Wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .Person .Avatar {
   border-radius: 200px;
   display: block;
@@ -736,12 +740,26 @@ section.Footer__Tickets h2 {
 }
 .Person__Social {
   visibility: hidden;
+  display: flex;
+  position: absolute;
+  inset-block-start: 0;
+  block-size: 200px;
+  inline-size: 200px;
+  margin-inline: 12.5px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .Person__Social .Icon {
   border-width: 0;
+  color: var(--color-white);
+}
+.Person__Social .Icon:hover {
+  color: var(--color-grayLight);
 }
 .Person:hover .Person__Social {
   visibility: visible;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* -- Features -- */
