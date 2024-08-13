@@ -113,8 +113,8 @@
     },
     {
       "time": "9:00 am",
-      "title": "Optimizing performance of React apps",
-      "description": "In this hands-on talk where we'll explore React's useMemo and useCallback hooks together. As a React Developer at Slack, I'm excited to share insights from my journey, including experiences at Slack as a Front End Developer. These hooks have become invaluable in my work, allowing me to optimize app performance by minimizing re-renders and computations. We'll break down their usage and show practical examples to make it easy to understand. By the end, you'll feel confident using these hooks to boost your React apps' efficiency.",
+      "title": "Bubbles, Booms and Blobs: Fun with HTML Canvas!",
+      "description": "Ever wanted to create a mini firework show on your webpage? Or maybe just some bouncing bubbles? Spoiler alert: you don't need CSS or fancy libraries to make it happen! In this hands-on session, I'll show you how to unleash the magic of HTML Canvas and plain old JavaScript to create quirky animations that'll have your users saying \"Whoa, cool!\" So, let's make some fun happen.",
       "speaker": "shrutikapoor08"
     },
     {
