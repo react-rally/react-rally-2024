@@ -13,7 +13,7 @@ constants.Links = {
   CODE_OF_CONDUCT_FORM:
     "https://docs.google.com/forms/d/e/1FAIpQLScghazbFL90gtVbWjlE2BxwXGuV-S1IIXGyXqeU9lyLAA7NmQ/viewform",
   EMAIL_ORGANIZERS: "info@reactrally.com",
-  TICKET_SALES: "https://ti.to/react-rally/react-rally-2024",
+  TICKET_SALES: "https://ti.to/react-rally/react-rally-2025",
   PROPOSAL_FORM: "https://sessionize.com/react-rally-2024",
   HOTEL_RESERVATION: "https://group.doubletree.com/htsh3u",
   CONFERENCE_DIRECTIONS: "https://maps.app.goo.gl/cGxN11JhdhZRtLEq6",
